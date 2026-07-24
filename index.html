@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>verumind Hub — Bezugsquelle</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem;
+    color: #1f2933; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e7eb; background: #111827; }
+    code, pre { background: #1f2937 !important; }
+    a { color: #5eead4; }
+  }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  .sub { color: #6b7280; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  code, pre { background: #f3f4f6; border-radius: 6px; }
+  code { padding: .1rem .35rem; font-size: .9em; }
+  pre { padding: .85rem 1rem; overflow-x: auto; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #374151; } }
+</style>
+</head>
+<body>
+  <h1>verumind Hub — Bezugsquelle</h1>
+  <p class="sub">Installationspaket und Versionsinformation für Kundeninstallationen.</p>
+
+  <p>Diese Seite richtet sich an IT-Abteilungen und Systemhäuser, die verumind Hub
+  installieren oder betreiben. Sie enthält keine Zugangsdaten.</p>
+
+  <h2>Installation</h2>
+  <p>Auf dem vorbereiteten Linux-Server ausführen:</p>
+  <pre><code>curl -fsSL https://updates.verumind.de/verumind-hub-install.tar.gz | tar -xz -C /opt
+cd /opt/verumind-hub &amp;&amp; chmod +x install.sh
+sudo ./install.sh</code></pre>
+  <p>Voraussetzungen und der vollständige Ablauf stehen in der Installationsanleitung,
+  die Sie von verumind erhalten.</p>
+
+  <h2>Dateien</h2>
+  <ul>
+    <li><a href="verumind-hub-install.tar.gz">verumind-hub-install.tar.gz</a> — Installationspaket
+      (<a href="verumind-hub-install.tar.gz.sha256">SHA256-Prüfsumme</a>)</li>
+    <li><a href="latest.json">latest.json</a> — aktuelle Programmversion</li>
+  </ul>
+
+  <h2>Kontakt</h2>
+  <ul>
+    <li><strong>Lizenz &amp; Freischaltung:</strong> <a href="mailto:aktivierung@verumind.de">aktivierung@verumind.de</a></li>
+    <li><strong>Support &amp; Störungen:</strong> <a href="mailto:info@verumind.de">info@verumind.de</a></li>
+  </ul>
+
+  <footer>verumind GmbH · <a href="https://verumind.de">verumind.de</a></footer>
+</body>
+</html>
