@@ -4,58 +4,144 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="description" content="Bezugsquelle für Installation und Aktualisierung von verumind Hub.">
 <title>verumind Hub — Bezugsquelle</title>
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem;
-    color: #1f2933; background: #fff;
-  }
+  :root { color-scheme: light dark; --bg:#fff; --fg:#1f2933; --muted:#6b7280; --line:#e5e7eb; --code:#f4f5f7; --accent:#0f766e; --box:#f9fafb; }
   @media (prefers-color-scheme: dark) {
-    body { color: #e5e7eb; background: #111827; }
-    code, pre { background: #1f2937 !important; }
-    a { color: #5eead4; }
+    :root { --bg:#0f172a; --fg:#e5e7eb; --muted:#9ca3af; --line:#334155; --code:#1e293b; --accent:#5eead4; --box:#111c33; }
   }
-  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
-  .sub { color: #6b7280; margin-top: 0; }
-  h2 { font-size: 1.05rem; margin-top: 2rem; }
-  code, pre { background: #f3f4f6; border-radius: 6px; }
-  code { padding: .1rem .35rem; font-size: .9em; }
-  pre { padding: .85rem 1rem; overflow-x: auto; }
-  ul { padding-left: 1.2rem; }
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: .9rem; }
-  @media (prefers-color-scheme: dark) { footer { border-color: #374151; } }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; margin: 0; padding: 3rem 1.25rem 2rem;
+    color: var(--fg); background: var(--bg);
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
+  .lead { color: var(--muted); margin: 0 0 2rem; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  a { color: var(--accent); }
+  code { background: var(--code); border-radius: 5px; padding: .12rem .35rem; font-size: .88em; }
+  pre { background: var(--code); border-radius: 8px; padding: .9rem 1.05rem; overflow-x: auto; font-size: .88rem; }
+  pre code { background: none; padding: 0; font-size: 1em; }
+  .box { background: var(--box); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.15rem; }
+  .box p { margin: .3rem 0; }
+  .ver { font-size: 1.35rem; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .2rem 0; }
+  .note { color: var(--muted); font-size: .92rem; }
+  footer { max-width: 46rem; margin: 3.5rem auto 0; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  footer nav a { margin-right: 1.1rem; display: inline-block; }
 </style>
 </head>
 <body>
-  <h1>verumind Hub — Bezugsquelle</h1>
-  <p class="sub">Installationspaket und Versionsinformation für Kundeninstallationen.</p>
+<main>
 
-  <p>Diese Seite richtet sich an IT-Abteilungen und Systemhäuser, die verumind Hub
-  installieren oder betreiben. Sie enthält keine Zugangsdaten.</p>
+  <h1>verumind Hub — Bezugsquelle</h1>
+  <p class="lead">Installationspaket und Versionsinformation für Kundeninstallationen.</p>
+
+  <p>Diese Seite richtet sich an <strong>IT-Abteilungen und Systemhäuser</strong>, die
+  verumind Hub installieren oder betreiben. Sie enthält keine Zugangsdaten und keinen
+  Quellcode. Registry-Token und Lizenzschlüssel erhalten Sie separat von verumind.</p>
+
+  <h2>Aktuelle Version</h2>
+  <div class="box">
+    <p class="ver" id="ver">wird geladen …</p>
+    <p class="note" id="verMeta"></p>
+    <p class="note" id="verNotes"></p>
+  </div>
 
   <h2>Installation</h2>
   <p>Auf dem vorbereiteten Linux-Server ausführen:</p>
-  <pre><code>curl -fsSL https://updates.verumind.de/verumind-hub-install.tar.gz | tar -xz -C /opt
+<pre><code>curl -fsSL https://updates.verumind.de/verumind-hub-install.tar.gz | tar -xz -C /opt
 cd /opt/verumind-hub &amp;&amp; chmod +x install.sh
 sudo ./install.sh</code></pre>
-  <p>Voraussetzungen und der vollständige Ablauf stehen in der Installationsanleitung,
-  die Sie von verumind erhalten.</p>
+  <p>Das Skript ermittelt die aktuelle Version selbstständig, erzeugt alle
+  Zugangs&shy;geheimnisse und startet die Anwendung. Abgefragt werden nur Domain,
+  E-Mail-Adressen, Administrator-Passwort und Ihr Registry-Token.</p>
+  <p class="note">Den vollständigen Ablauf inklusive Voraussetzungen, Inbetriebnahme und
+  Betrieb beschreibt die <strong>Installationsanleitung</strong>, die Sie von verumind
+  erhalten haben.</p>
+
+  <h2>Systemvoraussetzungen (Kurzfassung)</h2>
+  <ul>
+    <li>64-bit-Linux (aktuelle LTS-Version), Zugang mit <code>root</code>/<code>sudo</code></li>
+    <li>mindestens 2 CPU-Kerne, 4 GB RAM, 40 GB freier SSD-Speicher</li>
+    <li>Docker Engine 24+ und Docker Compose v2</li>
+    <li>Ports 80 und 443 eingehend erreichbar</li>
+    <li>(Sub-)Domain, deren DNS-Eintrag vor der Installation auf den Server zeigt</li>
+  </ul>
 
   <h2>Dateien</h2>
-  <ul>
-    <li><a href="verumind-hub-install.tar.gz">verumind-hub-install.tar.gz</a> — Installationspaket
-      (<a href="verumind-hub-install.tar.gz.sha256">SHA256-Prüfsumme</a>)</li>
-    <li><a href="latest.json">latest.json</a> — aktuelle Programmversion</li>
-  </ul>
+  <table>
+    <tr><th>Datei</th><th>Zweck</th></tr>
+    <tr>
+      <td><a href="verumind-hub-install.tar.gz">verumind-hub-install.tar.gz</a></td>
+      <td>Installationspaket (versionsneutral — enthält stets den aktuellen Installer)</td>
+    </tr>
+    <tr>
+      <td><a href="verumind-hub-install.tar.gz.sha256">…tar.gz.sha256</a></td>
+      <td>Prüfsumme zur Integritätsprüfung</td>
+    </tr>
+    <tr>
+      <td><a href="latest.json">latest.json</a></td>
+      <td>aktuelle Programmversion — wird von jeder Installation für die Update-Prüfung abgefragt</td>
+    </tr>
+  </table>
+
+  <h2>Integrität prüfen (empfohlen)</h2>
+  <p>So stellen Sie sicher, dass das heruntergeladene Paket unverfälscht ist:</p>
+<pre><code>curl -fsSLO https://updates.verumind.de/verumind-hub-install.tar.gz
+curl -fsSLO https://updates.verumind.de/verumind-hub-install.tar.gz.sha256
+sha256sum -c verumind-hub-install.tar.gz.sha256</code></pre>
+  <p>Die Ausgabe muss <code>OK</code> lauten. Weicht sie ab, brechen Sie die Installation
+  ab und wenden sich an den Support.</p>
 
   <h2>Kontakt</h2>
-  <ul>
-    <li><strong>Lizenz &amp; Freischaltung:</strong> <a href="mailto:aktivierung@verumind.de">aktivierung@verumind.de</a></li>
-    <li><strong>Support &amp; Störungen:</strong> <a href="mailto:info@verumind.de">info@verumind.de</a></li>
-  </ul>
+  <table>
+    <tr>
+      <td><strong>Lizenz &amp; Freischaltung</strong></td>
+      <td><a href="mailto:aktivierung@verumind.de">aktivierung@verumind.de</a></td>
+    </tr>
+    <tr>
+      <td><strong>Support &amp; Störungen</strong></td>
+      <td><a href="mailto:info@verumind.de">info@verumind.de</a></td>
+    </tr>
+  </table>
 
-  <footer>verumind GmbH · <a href="https://verumind.de">verumind.de</a></footer>
+</main>
+
+<footer>
+  <nav>
+    <a href="https://verumind.de/impressum/">Impressum</a>
+    <a href="https://verumind.de/datenschutzerklaerung/">Datenschutzerklärung</a>
+    <a href="https://verumind.de/allgemeine-geschaeftsbedingungen-agb/">AGB</a>
+    <a href="https://verumind.de">verumind.de</a>
+  </nav>
+  <p>Betreiber dieser Seite: verumind GmbH. Die Nutzung von verumind Hub richtet sich
+  nach den vertraglichen Vereinbarungen und den AGB.</p>
+</footer>
+
+<script>
+  // Zeigt die aktuelle Version direkt aus latest.json — so bleibt die Seite bei jedem
+  // Release automatisch aktuell, ohne dass sie angefasst werden muss.
+  fetch('latest.json', { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      document.getElementById('ver').textContent = 'Version ' + d.version;
+      var meta = [];
+      if (d.publishedAt) meta.push('Veröffentlicht: ' + d.publishedAt);
+      document.getElementById('verMeta').textContent = meta.join(' · ');
+      document.getElementById('verNotes').textContent = d.notes || '';
+    })
+    .catch(function () {
+      document.getElementById('ver').textContent = 'Version — siehe latest.json';
+    });
+</script>
 </body>
 </html>
