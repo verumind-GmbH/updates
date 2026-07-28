@@ -1,0 +1,6 @@
+# Das Installationspaket ist eine Binärdatei. Ohne diese Zeile entscheidet Git
+# anhand einer Inhaltsprüfung, ob es Zeilenenden umwandelt — bei einem .tar.gz
+# wäre das eine stille Beschädigung, die erst beim Kunden auffällt (Prüfsumme
+# passt nicht oder das Archiv lässt sich nicht entpacken).
+*.tar.gz binary
+*.sha256 text eol=lf
