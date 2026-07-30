@@ -1,5 +1,22 @@
 {
   "version": "0.6.0",
   "publishedAt": "2026-07-30",
-  "notes": "Firmengröße aus dem Handelsregister — und eine gründlich überarbeitete Kostenübersicht.\n\nGröße und Finanzkennzahlen\n• Zu jedem Lead werden Bilanzsumme, Umsatz und Mitarbeiterzahl aus dem Handelsregister ermittelt, sofern das Unternehmen sie offenlegt. In den Lead-Details sehen Sie die Zahlen nach Geschäftsjahr geordnet.\n• Daraus ergibt sich die Unternehmensgröße: klein, mittelgroß oder groß. Ab welchen Werten welche Stufe gilt, stellen Sie unter Einstellungen → Analyse & Verteilung → Unternehmensgröße selbst ein.\n• Die Größe steht als Spalte und Filter in der Leadliste zur Verfügung und lässt sich als Kriterium für die automatische Lead-Verteilung nutzen.\n• Sicherheitsprüfung: Ein Registereintrag wird nur übernommen, wenn er nachweislich zur Firma gehört. Namensgleiche Unternehmen an anderen Standorten werden abgewiesen, ihre Zahlen erscheinen nirgends.\n\nKosten\n• Die Kostenübersicht ist neu aufgebaut: Gesamtsumme und Durchschnitt je Lead oben, darunter die Blöcke Beschaffung, Anreicherung und Ansprache — jeder einzeln aufklappbar bis zum einzelnen Arbeitsschritt.\n• Ein Verlaufsdiagramm zeigt die Entwicklung im gewählten Zeitraum.\n• Werkzeuge mit Monats-Abo lassen sich als solche hinterlegen. Der Preis je Vorgang wird aus Monatsbeitrag und enthaltenem Kontingent berechnet, und Sie sehen jederzeit, wie viel des Kontingents verbraucht ist. Den beim Anbieter abgelesenen Stand können Sie eintragen — danach zählt das Portal selbst weiter.\n• Auf Wunsch werden Sie benachrichtigt, wenn ein Guthaben zur Neige geht.\n• Vor jeder Beschaffung, Anreicherung und jedem Textentwurf sehen Sie, was der Vorgang kosten wird — aus Ihren eigenen hinterlegten Sätzen gerechnet.\n\nWeiteres\n• In der Beschaffung filtern Sie die Ergebnisliste nach einzelnen Läufen. Nach einer Beschaffung zeigt die Liste unmittelbar deren Ergebnis.\n• Geschätzte Mitarbeiterzahlen zählen im Lead-Score nur zur Hälfte, eine belegte Angabe aus dem Handelsregister zählt voll. Die Score-Einstellungen erklären das.\n\nDie Aktualisierung verändert keine bestehenden Daten. Neue Angaben kommen hinzu, sobald Sie Leads beschaffen oder anreichern."
+  "notes": "Firmengröße aus dem Handelsregister — und eine gründlich überarbeitete Kostenübersicht.\n\nGröße und Finanzkennzahlen\n• Zu jedem Lead werden Bilanzsumme, Umsatz und Mitarbeiterzahl aus dem Handelsregister ermittelt, sofern das Unternehmen sie offenlegt. In den Lead-Details sehen Sie die Zahlen nach Geschäftsjahr geordnet.\n• Daraus ergibt sich die Unternehmensgröße: klein, mittelgroß oder groß. Ab welchen Werten welche Stufe gilt, stellen Sie unter Einstellungen → Analyse & Verteilung → Unternehmensgröße selbst ein.\n• Die Größe steht als Spalte und Filter in der Leadliste zur Verfügung und lässt sich als Kriterium für die automatische Lead-Verteilung nutzen.\n• Sicherheitsprüfung: Ein Registereintrag wird nur übernommen, wenn er nachweislich zur Firma gehört. Namensgleiche Unternehmen an anderen Standorten werden abgewiesen, ihre Zahlen erscheinen nirgends.\n\nKosten\n• Die Kostenübersicht ist neu aufgebaut: Gesamtsumme und Durchschnitt je Lead oben, darunter die Blöcke Beschaffung, Anreicherung und Ansprache — jeder einzeln aufklappbar bis zum einzelnen Arbeitsschritt.\n• Ein Verlaufsdiagramm zeigt die Entwicklung im gewählten Zeitraum.\n• Werkzeuge mit Monats-Abo lassen sich als solche hinterlegen. Der Preis je Vorgang wird aus Monatsbeitrag und enthaltenem Kontingent berechnet, und Sie sehen jederzeit, wie viel des Kontingents verbraucht ist. Den beim Anbieter abgelesenen Stand können Sie eintragen — danach zählt das Portal selbst weiter.\n• Auf Wunsch werden Sie benachrichtigt, wenn ein Guthaben zur Neige geht.\n• Vor jeder Beschaffung, Anreicherung und jedem Textentwurf sehen Sie, was der Vorgang kosten wird — aus Ihren eigenen hinterlegten Sätzen gerechnet.\n\nWeiteres\n• In der Beschaffung filtern Sie die Ergebnisliste nach einzelnen Läufen. Nach einer Beschaffung zeigt die Liste unmittelbar deren Ergebnis.\n• Geschätzte Mitarbeiterzahlen zählen im Lead-Score nur zur Hälfte, eine belegte Angabe aus dem Handelsregister zählt voll. Die Score-Einstellungen erklären das.\n\nDie Aktualisierung verändert keine bestehenden Daten. Neue Angaben kommen hinzu, sobald Sie Leads beschaffen oder anreichern.",
+  "rollbackVersions": [
+    {
+      "version": "0.5.0",
+      "publishedAt": "2026-07-28",
+      "label": "Microsoft-365-Versand"
+    },
+    {
+      "version": "0.4.1",
+      "publishedAt": "2026-07-27",
+      "label": "Personenanreicherung freigebbar"
+    },
+    {
+      "version": "0.4.0",
+      "publishedAt": "2026-07-26",
+      "label": "Sicherheitsverbesserungen"
+    }
+  ]
 }
