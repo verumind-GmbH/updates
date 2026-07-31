@@ -1,8 +1,13 @@
 {
-  "version": "0.6.1",
+  "version": "0.6.2",
   "publishedAt": "2026-07-30",
-  "notes": "Zu einer früheren Version zurückkehren.\n\nSollte nach einer Aktualisierung etwas nicht wie gewohnt funktionieren, können Sie als Administrator selbst auf eine frühere Version zurückgehen — ohne uns zu kontaktieren und ohne Wartezeit.\n\n• Unter Einstellungen → System → Aktualisierung finden Sie den Punkt „Zu einer früheren Version zurückkehren\".\n• Zur Auswahl stehen die von verumind freigegebenen Vorgängerversionen. Freigegeben sind nur solche, zu denen die Rückkehr gefahrlos ist.\n• Ihre Daten bleiben dabei vollständig erhalten — auch alles, was seit der Aktualisierung dazugekommen ist. Es wird ausschließlich das Programm ausgetauscht.\n• Wie bei jeder Aktualisierung wird vorher automatisch eine Sicherung angelegt. Lässt sich die ältere Fassung nicht starten, kehrt Ihre Installation von selbst zur bisherigen zurück.\n\nDer Punkt ist auch dann erreichbar, wenn Sie bereits die neueste Version verwenden — denn genau dann wird er gebraucht.",
+  "notes": "Tragfähig für größere Teams — und Handbücher auf dem neuesten Stand.\n\nDiese Aktualisierung bringt keine neuen Bedienfunktionen, sondern beseitigt eine Grenze, die beim Wachstum spürbar geworden wäre.\n\nMehrere Personen gleichzeitig\n• Bisher teilten sich alle Mitarbeiter eines Hauses ein gemeinsames Anfrage-Kontingent, weil sie aus Sicht des Servers hinter derselben Internet-Adresse sitzen. Ab etwa 30 gleichzeitig Arbeitenden hätte das Portal begonnen, Anfragen abzuweisen. Jetzt zählt jeder Zugang für sich.\n• Der Server nutzt außerdem alle Prozessorkerne statt nur einen. Beides zusammen ist auf 50 bis 100 gleichzeitige Benutzer ausgelegt.\n• Abgelaufene Anmeldedaten werden nächtlich aufgeräumt, damit die Datenbank nicht unbegrenzt wächst.\n\nAn Ihrer Bedienung ändert sich nichts. Die Aktualisierung verändert keine bestehenden Daten.",
   "rollbackVersions": [
+    {
+      "version": "0.6.1",
+      "publishedAt": "2026-07-30",
+      "label": "Zu früherer Version zurückkehren"
+    },
     {
       "version": "0.6.0",
       "publishedAt": "2026-07-30",
