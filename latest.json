@@ -1,8 +1,13 @@
 {
-  "version": "0.7.1",
+  "version": "0.7.2",
   "publishedAt": "2026-08-03",
-  "notes": "Behebt einen Fehler beim Freischalten.\n\nAuf Servern mit mehreren Prozessorkernen kam es nach dem Einspielen eines Lizenzschlüssels vor, dass Teile des Portals nicht luden — mal erschien eine Ansicht, mal eine Fehlermeldung, ohne erkennbares Muster. Der Grund: Die Anwendung läuft in mehreren parallelen Prozessen, und nur einer davon kannte den neuen Schlüssel.\n\nNach dieser Aktualisierung ist ein eingespielter oder entzogener Schlüssel binnen zwei Sekunden in der gesamten Anwendung wirksam. Ein Neustart des Servers ist dafür nicht mehr nötig.\n\nBetroffen war jede Installation mit mindestens zwei Prozessorkernen, und zwar bei jedem Einspielen, Verlängern oder Entziehen eines Schlüssels. Sind bei Ihnen bereits alle Ansichten erreichbar, ändert diese Aktualisierung für Sie nichts — sie ist dann reine Vorsorge für die nächste Freischaltung.\n\nAn Ihrer Bedienung ändert sich nichts. Bestehende Daten werden nicht verändert.",
+  "notes": "Vor allem für Neuinstallationen — im laufenden Betrieb ändert sich fast nichts.\n\nDer größte Teil dieser Version ist eine neue Installationsanleitung. Sie liegt jetzt dem Installationspaket bei, statt getrennt verschickt zu werden, und führt einmal linear durch die Einrichtung. Für Ihre bestehende Installation ist das ohne Bedeutung.\n\nWas sich für Sie ändert\n• Die Ortssuche im Umkreisfilter meldet jetzt verständlich, wenn sie nichts findet oder kurz ausgelastet ist. Bisher blieb das Feld in diesen Fällen einfach leer, und man konnte nicht erkennen, woran es lag.\n• Bei mehreren gleichzeitigen Suchen hält der Server den vom Kartendienst geforderten Abstand jetzt zuverlässig ein. Ohne das konnte der Kartendienst Anfragen von Ihrem Server zeitweise abweisen.\n\nFür neue Installationen\n• Das Installationsskript verlangt jetzt ein sicheres Administrator-Passwort und fragt bei einer zu schwachen Eingabe erneut. Bestehende Passwörter bleiben unverändert gültig.\n\nAn Ihrer Bedienung ändert sich nichts. Bestehende Daten werden nicht verändert.",
   "rollbackVersions": [
+    {
+      "version": "0.7.1",
+      "publishedAt": "2026-08-03",
+      "label": "Freischaltung wirkt in der ganzen Anwendung"
+    },
     {
       "version": "0.7.0",
       "publishedAt": "2026-08-03",
@@ -22,11 +27,6 @@
       "version": "0.6.0",
       "publishedAt": "2026-07-30",
       "label": "Firmengröße aus dem Handelsregister"
-    },
-    {
-      "version": "0.5.0",
-      "publishedAt": "2026-07-28",
-      "label": "Microsoft-365-Versand"
     }
   ]
 }
