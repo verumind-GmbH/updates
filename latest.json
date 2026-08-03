@@ -1,8 +1,13 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "publishedAt": "2026-08-03",
-  "notes": "Aktualisierungen, die sich selbst wieder in Ordnung bringen.\n\nDiese Version bringt keine neuen Bedienfunktionen. Sie sorgt dafür, dass eine Aktualisierung auch dann nicht liegen bleibt, wenn etwas dazwischenkommt.\n\nWas sich ändert\n• Wird eine Aktualisierung hart unterbrochen — Stromausfall, Neustart des Servers mitten im Vorgang —, stellt die Installation beim nächsten Start selbsttätig die zuletzt funktionierende Fassung wieder her und startet die fehlenden Dienste. Bisher blieb das Portal in diesem Fall stehen, bis jemand am Server eingriff.\n• Der Dienst, der Aktualisierungen ausführt, erneuert sich künftig selbst mit. Bisher blieb er auf dem Stand der Erstinstallation.\n• Lässt sich eine solche Erneuerung nicht starten, wird sie übersprungen, die bisherige Fassung läuft weiter, und Sie sehen einen Hinweis in den Einstellungen. Portal, Daten und künftige Aktualisierungen sind davon nicht betroffen.\n\nFür Neuinstallationen\n• Dem Installationspaket liegt jetzt eine Serverprüfung bei. Sie prüft vor der Installation Ausstattung, Netzwerkfreigaben und Namensauflösung und meldet in einer Zeile, ob der Server geeignet ist.\n\nAn Ihrer Bedienung ändert sich nichts. Bestehende Daten werden nicht verändert.",
+  "notes": "Behebt einen Fehler beim Freischalten.\n\nAuf Servern mit mehreren Prozessorkernen kam es nach dem Einspielen eines Lizenzschlüssels vor, dass Teile des Portals nicht luden — mal erschien eine Ansicht, mal eine Fehlermeldung, ohne erkennbares Muster. Der Grund: Die Anwendung läuft in mehreren parallelen Prozessen, und nur einer davon kannte den neuen Schlüssel.\n\nNach dieser Aktualisierung ist ein eingespielter oder entzogener Schlüssel binnen zwei Sekunden in der gesamten Anwendung wirksam. Ein Neustart des Servers ist dafür nicht mehr nötig.\n\nBetroffen war jede Installation mit mindestens zwei Prozessorkernen, und zwar bei jedem Einspielen, Verlängern oder Entziehen eines Schlüssels. Sind bei Ihnen bereits alle Ansichten erreichbar, ändert diese Aktualisierung für Sie nichts — sie ist dann reine Vorsorge für die nächste Freischaltung.\n\nAn Ihrer Bedienung ändert sich nichts. Bestehende Daten werden nicht verändert.",
   "rollbackVersions": [
+    {
+      "version": "0.7.0",
+      "publishedAt": "2026-08-03",
+      "label": "Aktualisierungen, die sich selbst in Ordnung bringen"
+    },
     {
       "version": "0.6.2",
       "publishedAt": "2026-07-30",
@@ -22,11 +27,6 @@
       "version": "0.5.0",
       "publishedAt": "2026-07-28",
       "label": "Microsoft-365-Versand"
-    },
-    {
-      "version": "0.4.1",
-      "publishedAt": "2026-07-27",
-      "label": "Personenanreicherung freigebbar"
     }
   ]
 }
