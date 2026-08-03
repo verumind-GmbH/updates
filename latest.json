@@ -1,8 +1,13 @@
 {
-  "version": "0.6.2",
-  "publishedAt": "2026-07-30",
-  "notes": "Tragfähig für größere Teams — und Handbücher auf dem neuesten Stand.\n\nDiese Aktualisierung bringt keine neuen Bedienfunktionen, sondern beseitigt eine Grenze, die beim Wachstum spürbar geworden wäre.\n\nMehrere Personen gleichzeitig\n• Bisher teilten sich alle Mitarbeiter eines Hauses ein gemeinsames Anfrage-Kontingent, weil sie aus Sicht des Servers hinter derselben Internet-Adresse sitzen. Ab etwa 30 gleichzeitig Arbeitenden hätte das Portal begonnen, Anfragen abzuweisen. Jetzt zählt jeder Zugang für sich.\n• Der Server nutzt außerdem alle Prozessorkerne statt nur einen. Beides zusammen ist auf 50 bis 100 gleichzeitige Benutzer ausgelegt.\n• Abgelaufene Anmeldedaten werden nächtlich aufgeräumt, damit die Datenbank nicht unbegrenzt wächst.\n\nAn Ihrer Bedienung ändert sich nichts. Die Aktualisierung verändert keine bestehenden Daten.",
+  "version": "0.7.0",
+  "publishedAt": "2026-08-03",
+  "notes": "Aktualisierungen, die sich selbst wieder in Ordnung bringen.\n\nDiese Version bringt keine neuen Bedienfunktionen. Sie sorgt dafür, dass eine Aktualisierung auch dann nicht liegen bleibt, wenn etwas dazwischenkommt.\n\nWas sich ändert\n• Wird eine Aktualisierung hart unterbrochen — Stromausfall, Neustart des Servers mitten im Vorgang —, stellt die Installation beim nächsten Start selbsttätig die zuletzt funktionierende Fassung wieder her und startet die fehlenden Dienste. Bisher blieb das Portal in diesem Fall stehen, bis jemand am Server eingriff.\n• Der Dienst, der Aktualisierungen ausführt, erneuert sich künftig selbst mit. Bisher blieb er auf dem Stand der Erstinstallation.\n• Lässt sich eine solche Erneuerung nicht starten, wird sie übersprungen, die bisherige Fassung läuft weiter, und Sie sehen einen Hinweis in den Einstellungen. Portal, Daten und künftige Aktualisierungen sind davon nicht betroffen.\n\nFür Neuinstallationen\n• Dem Installationspaket liegt jetzt eine Serverprüfung bei. Sie prüft vor der Installation Ausstattung, Netzwerkfreigaben und Namensauflösung und meldet in einer Zeile, ob der Server geeignet ist.\n\nAn Ihrer Bedienung ändert sich nichts. Bestehende Daten werden nicht verändert.",
   "rollbackVersions": [
+    {
+      "version": "0.6.2",
+      "publishedAt": "2026-07-30",
+      "label": "Tragfähig für größere Teams"
+    },
     {
       "version": "0.6.1",
       "publishedAt": "2026-07-30",
@@ -22,11 +27,6 @@
       "version": "0.4.1",
       "publishedAt": "2026-07-27",
       "label": "Personenanreicherung freigebbar"
-    },
-    {
-      "version": "0.4.0",
-      "publishedAt": "2026-07-26",
-      "label": "Sicherheitsverbesserungen"
     }
   ]
 }
