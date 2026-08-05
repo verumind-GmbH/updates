@@ -1,8 +1,13 @@
 {
-  "version": "0.8.2",
+  "version": "0.8.3",
   "publishedAt": "2026-08-05",
-  "notes": "Die Kosteneinstellungen sagen jetzt selbst, was sie brauchen.\n\nKI-KOSTEN SIND SICHTBAR\n\nIn den Kosteneinstellungen stand bisher nur, was Sie eintragen sollen — und nichts darüber, dass die Kosten der KI-Aufrufe längst mitgerechnet werden. Wer keine Zeile dafür fand, trug vorsichtshalber einen Schätzwert ein, der dann gegen den echten Betrag lief.\n\nJetzt steht dort eine Übersicht: welcher Zugang verbunden ist, welche Modelle verwendet werden, was sie kosten und zu welchem Preisstand. Es gibt darin nichts einzutragen — für Briefings, Textentwürfe, das Verdichten beim Anreichern und das Aufbereiten der Suchergebnisse wird der tatsächliche Verbrauch jedes einzelnen Aufrufs berechnet.\n\nEIN VERTRAG FÜR MEHRERE SCHRITTE\n\nManche Anbieter decken mit einem Tarif mehrere Arbeitsschritte ab, die unterschiedlich viel verbrauchen. Bisher ließ sich das nicht abbilden: Entweder zählte der Monatspreis mehrfach, oder ein Teil der Schritte buchte gar nichts.\n\nDie Kostenzeilen haben jetzt ein Feld „Vertrag\". Zeilen mit demselben Namen teilen sich einen Tarif — der Monatspreis zählt einmal, das Kontingent wird gemeinsam verbraucht, und die Warnung „Kontingent knapp\" kommt rechtzeitig. Bestehende Einstellungen bleiben unverändert gültig; ohne Vertragsnamen ändert sich nichts.\n\nVORSCHLÄGE STATT LEERER MASKE\n\nVerbinden Sie einen Zugang zu Apify, Apollo oder handelsregister.ai, legt das Portal die passenden Kostenzeilen gleich mit an — mit Monatspreis, Kontingent und Verbrauch je Aufruf. Diese Werte stammen aus unserer Erfahrung, nicht aus Ihrem Vertrag; sie sind deshalb ausdrücklich als ungeprüfter Vorschlag gekennzeichnet, bis Sie sie bestätigen.\n\nEin vorhandener Wert wird dabei nie überschrieben, und eine von Ihnen entfernte Zeile kommt nicht zurück.\n\nKLARERE AUSWAHL\n\nIn der Liste der Arbeitsschritte stand „Handelsregister abfragen\" zweimal — der Abruf läuft bei der Beschaffung und beim Anreichern. Jetzt steht die Phase im Namen. Schritte, deren Kosten gemessen werden, und ein abgelöstes Verfahren erscheinen nicht mehr zur Auswahl.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Verständlichere Meldungen und eine Korrektur bei den Freigaben.\n\nFREIGABEN BLEIBEN ERHALTEN\n\nWurde eine Abteilung gelöscht, blieben ihre Freigaben als unsichtbare Reste zurück. Sie zeigten ins Leere und ließen sich über die Oberfläche nicht mehr entfernen — zu einer gelöschten Abteilung gibt es kein Kästchen zum Abwählen. Beim nächsten Speichern wurden sie stillschweigend mitgeschleppt, und es sah so aus, als würde die Einstellung verworfen.\n\nSolche Reste werden jetzt beim Speichern entfernt, und beim Löschen einer Abteilung gehen ihre Freigaben gleich mit. Ihr Bestand bereinigt sich damit beim nächsten Speichern von selbst.\n\nDer Hinweis über der Freigabe-Auswahl sagt außerdem, was vorher fehlte: Eine Abteilung gibt für alle ihre Mitglieder frei — auch für die, die erst später dazukommen.\n\nMELDUNGEN, DIE WEITERHELFEN\n\nSchlägt die KI-Vorbefüllung des Firmenprofils fehl, stand dort bisher eine Rückfrage zu einer technischen Einstellung, die es nicht mehr gibt. Jetzt erscheint die tatsächliche Auskunft — etwa der Hinweis, dass die Website im Profil noch nicht gespeichert ist.\n\nKLEINERES\n\nAuf der Seite „Integrationen\" verwies ein Satz fest auf die Leadgenerierung. Er ist jetzt allgemein formuliert: Die Zugänge eines Fachmoduls stehen jeweils in dessen Einstellungen. Und das Namensfeld einer CRM-Verbindung schlägt kein fremdes Unternehmen mehr als Beispiel vor.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.2",
+      "publishedAt": "2026-08-05",
+      "label": "Kosteneinstellungen überarbeitet"
+    },
     {
       "version": "0.8.1",
       "publishedAt": "2026-08-05",
@@ -22,11 +27,6 @@
       "version": "0.7.2",
       "publishedAt": "2026-08-03",
       "label": "Installationspaket mit Anleitung"
-    },
-    {
-      "version": "0.7.1",
-      "publishedAt": "2026-08-03",
-      "label": "Freischaltung wirkt in der ganzen Anwendung"
     }
   ]
 }
