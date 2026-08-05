@@ -1,8 +1,13 @@
 {
-  "version": "0.8.0",
+  "version": "0.8.1",
   "publishedAt": "2026-08-05",
-  "notes": "Die Abläufe der Leadgenerierung laufen jetzt vollständig im Portal.\n\nWAS SICH FÜR SIE ÄNDERT\n\nIhr Server braucht keine eingehende Freigabe mehr aus dem Internet. Bisher meldeten die Dienste ihre Ergebnisse an den Server zurück, was eine Öffnung in Ihrer Firewall voraussetzte. Das Portal fragt jetzt selbst nach. Für Ihre Netzwerkabteilung heißt das: Nur noch ausgehende Verbindungen.\n\nAuch Port 80 ist keine Pflicht mehr. Wenn Sie ein eigenes HTTPS-Zertifikat haben — von Ihrem Anbieter oder aus Ihrer internen Zertifizierungsstelle —, legen Sie es in den Ordner „certs\" und der Server benutzt es. Port 80 brauchen Sie nur noch, wenn sich der Server sein Zertifikat selbst besorgen soll.\n\nWAS SIE EINMALIG TUN MÜSSEN\n\nDie Zugänge zu den Diensten, die Ihre Leads beschaffen und anreichern, tragen Sie im Portal ein: Leadgenerierung → Einstellungen → „Zugänge & KI\". Es sind Ihre eigenen Konten bei AWS, Apify, Apollo und handelsregister.ai; die Schlüssel werden verschlüsselt gespeichert und nirgends wieder angezeigt.\n\nDort finden Sie außerdem zwei neue Ansichten: die Formulierungen der KI-Texte, die Sie selbst anpassen können, und eine Übersicht der Hintergrund-Aufträge — was läuft, was wartet, was fehlgeschlagen ist und warum.\n\nWEITER VERBESSERT\n\nDie Kosten der KI-Aufrufe werden jetzt anhand des tatsächlichen Verbrauchs berechnet statt pauschal geschätzt. In der Kostenübersicht stehen damit die echten Beträge.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Die Anreicherung findet mehr — und dieselbe Arbeit wird nicht mehr doppelt bezahlt.\n\nMEHR ANSPRECHPARTNER\n\nDas Impressum wird jetzt auch dann gefunden, wenn es nicht unter der üblichen Adresse liegt. Viele Website-Baukästen legen die Pflichtseite unter „/about\" oder einer erzeugten Kennung ab; nur der Verweis im Seitenfuß heißt „Impressum\". Solche Seiten wurden bisher übersehen — und mit ihnen die dort genannten Geschäftsführer.\n\nWenn Sie die personenbezogene Anreicherung ausdrücklich freigegeben haben, werden zusätzlich Personen erfasst, die auf der Website namentlich genannt sind — etwa auf einer Team- oder Unternehmensseite. Ohne diese Freigabe ändert sich nichts: Dann bleibt es wie bisher bei den Vertretungsberechtigten aus dem Impressum. Aus Fließtext gewonnene Kontakte sind zur Prüfung markiert und tragen keine erfundenen Kontaktdaten.\n\nBESSERE FIRMENPROFILE\n\nBranche, Leistungen, Schwerpunkte und Kurzbeschreibung werden wieder zuverlässig erfasst. Sie fehlten seit Ende Juli, ohne dass es sich als Fehler zeigte — die Felder blieben einfach leer. Sie fließen in die Gesprächsvorbereitung ein; die Briefings werden dadurch konkreter.\n\nKEINE DOPPELTEN LÄUFE MEHR\n\nEin Beschaffungslauf über viele Orte dauert lange. Bislang konnte ein solcher Lauf fälschlich als abgebrochen gelten und ein zweites Mal starten, während der erste noch arbeitete — mit doppelten Kosten für KI-Auswertung und Registerabfragen. Lange Läufe melden sich jetzt regelmäßig zurück und werden nicht mehr unterbrochen.\n\nHINWEIS AUF ÄLTERE SERVERDATEIEN\n\nEine Aktualisierung erneuert das Portal, aber nicht die Konfigurationsdateien auf Ihrem Server — das ist Absicht, damit Ihre eigenen Anpassungen erhalten bleiben. Neu ist, dass das Portal es Ihnen sagt, wenn dadurch eine Fähigkeit fehlt. Nach dieser Aktualisierung erscheint dieser Hinweis einmalig bei allen bestehenden Installationen. Er bedeutet keinen Fehler: Das Portal läuft vollständig. Betroffen ist derzeit allein die Verwendung eines eigenen HTTPS-Zertifikats. Wenn Sie das nutzen möchten, melden Sie sich bei uns — wir schicken Ihnen die beiden Dateien und die passenden Befehle.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.0",
+      "publishedAt": "2026-08-05",
+      "label": "Abläufe vollständig im Portal, keine eingehende Freigabe nötig"
+    },
     {
       "version": "0.7.3",
       "publishedAt": "2026-08-03",
@@ -22,11 +27,6 @@
       "version": "0.7.0",
       "publishedAt": "2026-08-03",
       "label": "Aktualisierungen, die sich selbst in Ordnung bringen"
-    },
-    {
-      "version": "0.6.2",
-      "publishedAt": "2026-07-30",
-      "label": "Tragfähig für größere Teams"
     }
   ]
 }
