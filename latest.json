@@ -1,8 +1,13 @@
 {
-  "version": "0.8.5",
+  "version": "0.8.6",
   "publishedAt": "2026-08-05",
-  "notes": "Die Gesprächsvorbereitung ist wieder vollständig.\n\nWAS GEFEHLT HAT\n\nIn den Briefings blieben mehrere Bereiche leer, ohne dass eine Fehlermeldung darauf hinwies: Bei den Kennzahlen standen die Bezeichnungen ohne die Zahlen daneben, und im Reiter „Call\" fehlten die BANT-Fragen und die Einwandbehandlung vollständig. Kurzprofil, Anwendungsfälle, Aufhänger und Gesprächsleitfaden waren davon nicht betroffen.\n\nUrsache war eine Unstimmigkeit in der Vorgabe an die KI: Einige Felder trugen dort andere Bezeichnungen als in der Anzeige. Was zufällig übereinstimmte, erschien; der Rest blieb leer. Die Bezeichnungen stimmen jetzt wieder überein, und eine automatische Prüfung hält beide Seiten künftig zusammen.\n\nWAS SIE TUN MÜSSEN\n\nBereits erstellte Briefings bleiben unvollständig — die fehlenden Angaben stehen nicht in den Daten und lassen sich nicht nachträglich ergänzen. Wählen Sie bei betroffenen Leads einmal „Briefing neu erstellen\"; danach sind Kennzahlen, BANT-Fragen und Einwandbehandlung wieder vollständig. Das kostet einen neuen KI-Aufruf.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Die Gesprächsvorbereitung nutzt jetzt Ihre eigene Einwandbehandlung.\n\nWAS SICH ÄNDERT\n\nIm Unternehmensprofil können Sie häufige Einwände samt empfohlener Antwort hinterlegen. Bei der E-Mail-Ansprache wurden sie bisher berücksichtigt, in der Gesprächsvorbereitung dagegen nicht — obwohl genau dort ein Abschnitt „Einwandbehandlung\" für den Anruf erzeugt wird.\n\nDie KI hat die Einwände deshalb selbst erfunden. Sie klangen plausibel, waren aber nicht die, auf die Ihr Vertrieb seine Antworten abgestimmt hat. Weil der Abschnitt gefüllt war, fiel das nicht auf.\n\nAb dieser Version fließen Ihre hinterlegten Einwände in die Vorbereitung ein. Ebenso die freien Abschnitte unter „Weitere Informationen\" — was Sie dort über Ihr Unternehmen festhalten, stand bisher nur den Textentwürfen zur Verfügung.\n\nCold-Mail-Vorlagen bleiben bewusst außen vor: Sie sind eine Formulierungshilfe für Texte, die verschickt werden, und in der internen Vorbereitung ohne Nutzen.\n\nWAS SIE TUN KÖNNEN\n\nBereits erstellte Briefings bleiben unverändert. Wählen Sie bei Bedarf „Briefing neu erstellen\" — die Vorbereitung greift dann auf Ihre gepflegten Einwände zurück.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.5",
+      "publishedAt": "2026-08-05",
+      "label": "Gesprächsvorbereitung wieder vollständig"
+    },
     {
       "version": "0.8.4",
       "publishedAt": "2026-08-05",
@@ -22,11 +27,6 @@
       "version": "0.8.1",
       "publishedAt": "2026-08-05",
       "label": "Bessere Anreicherung, keine doppelten Läufe"
-    },
-    {
-      "version": "0.8.0",
-      "publishedAt": "2026-08-05",
-      "label": "Abläufe vollständig im Portal, keine eingehende Freigabe nötig"
     }
   ]
 }
