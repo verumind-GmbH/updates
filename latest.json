@@ -1,8 +1,13 @@
 {
-  "version": "0.8.4",
+  "version": "0.8.5",
   "publishedAt": "2026-08-05",
-  "notes": "Eine Störung mitten in der Anreicherung wirft nicht mehr alles weg.\n\nWAS SICH ÄNDERT\n\nDie Anreicherung besteht aus mehreren Schritten: Website lesen, Impressum auswerten, den Text verdichten lassen, Ansprechpartner ermitteln, Handelsregister abfragen. Fiel der Verdichtungsschritt aus — etwa weil der KI-Dienst kurz nicht erreichbar war —, kam für den Lead bisher gar nichts an. Auch nicht die Angaben, die längst vorlagen.\n\nDas ist deshalb ärgerlich, weil Anschrift, Telefonnummer, E-Mail-Adresse, Registernummer und die vertretungsberechtigten Personen aus dem Impressum stammen und mit der KI nichts zu tun haben. Sie waren da und wurden verworfen.\n\nJetzt läuft die Anreicherung weiter: Diese Angaben kommen an, und nur die von der KI erzeugte Beschreibung (Branche, Leistungen, Kurzprofil) bleibt leer — statt erfunden zu werden. Sie lässt sich später mit einem erneuten Anreichern nachholen, ohne den bereits bezahlten Abruf zu wiederholen.\n\nKommt weder aus dem Impressum noch von der KI etwas zusammen, gilt der Lauf weiterhin als fehlgeschlagen. Ein Lead, der als angereichert gilt und keine einzige neue Angabe trägt, wäre die schlechtere Auskunft.\n\nKLARERE FEHLERMELDUNG\n\nSchlug ein KI-Aufruf endgültig fehl, stand in der Auftragsübersicht „Wird erneut versucht\" — obwohl alle Versuche bereits aufgebraucht waren. Wer das las, wartete auf etwas, das nicht mehr kam. Jetzt steht dort, dass aufgegeben wurde, und Sie können den Vorgang gezielt erneut anstoßen.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Die Gesprächsvorbereitung ist wieder vollständig.\n\nWAS GEFEHLT HAT\n\nIn den Briefings blieben mehrere Bereiche leer, ohne dass eine Fehlermeldung darauf hinwies: Bei den Kennzahlen standen die Bezeichnungen ohne die Zahlen daneben, und im Reiter „Call\" fehlten die BANT-Fragen und die Einwandbehandlung vollständig. Kurzprofil, Anwendungsfälle, Aufhänger und Gesprächsleitfaden waren davon nicht betroffen.\n\nUrsache war eine Unstimmigkeit in der Vorgabe an die KI: Einige Felder trugen dort andere Bezeichnungen als in der Anzeige. Was zufällig übereinstimmte, erschien; der Rest blieb leer. Die Bezeichnungen stimmen jetzt wieder überein, und eine automatische Prüfung hält beide Seiten künftig zusammen.\n\nWAS SIE TUN MÜSSEN\n\nBereits erstellte Briefings bleiben unvollständig — die fehlenden Angaben stehen nicht in den Daten und lassen sich nicht nachträglich ergänzen. Wählen Sie bei betroffenen Leads einmal „Briefing neu erstellen\"; danach sind Kennzahlen, BANT-Fragen und Einwandbehandlung wieder vollständig. Das kostet einen neuen KI-Aufruf.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.4",
+      "publishedAt": "2026-08-05",
+      "label": "Störung mitten in der Anreicherung wirft nicht mehr alles weg"
+    },
     {
       "version": "0.8.3",
       "publishedAt": "2026-08-05",
@@ -22,11 +27,6 @@
       "version": "0.8.0",
       "publishedAt": "2026-08-05",
       "label": "Abläufe vollständig im Portal, keine eingehende Freigabe nötig"
-    },
-    {
-      "version": "0.7.3",
-      "publishedAt": "2026-08-03",
-      "label": "Korrektur am Installationsskript"
     }
   ]
 }
