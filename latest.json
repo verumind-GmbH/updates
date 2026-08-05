@@ -1,8 +1,13 @@
 {
-  "version": "0.7.3",
-  "publishedAt": "2026-08-03",
-  "notes": "Eine Korrektur am Installationsskript. Für bestehende Installationen ohne Bedeutung.\n\nWurde das Installationsskript mit dem Befehl „sh install.sh\" gestartet, brach es bei der Passworteingabe mit einer technischen Meldung ab. Der richtige Befehl steht in der Anleitung, aber die Serverprüfung nannte versehentlich den falschen. Beides ist korrigiert, und das Skript weist einen falschen Aufruf jetzt mit einem klaren Hinweis ab, statt mittendrin abzubrechen.\n\nAußerdem nennt das Installationsskript am Ende den nächsten Schritt: dass für die Freischaltung der Module noch eine Lizenz nötig ist, samt der dafür benötigten Instanz-Kennung.\n\nAn Ihrer Installation ändert sich nichts. Es gibt keinen Grund zur Eile — die Aktualisierung ist nur für neue Installationen von Belang.",
+  "version": "0.8.0",
+  "publishedAt": "2026-08-05",
+  "notes": "Die Abläufe der Leadgenerierung laufen jetzt vollständig im Portal.\n\nWAS SICH FÜR SIE ÄNDERT\n\nIhr Server braucht keine eingehende Freigabe mehr aus dem Internet. Bisher meldeten die Dienste ihre Ergebnisse an den Server zurück, was eine Öffnung in Ihrer Firewall voraussetzte. Das Portal fragt jetzt selbst nach. Für Ihre Netzwerkabteilung heißt das: Nur noch ausgehende Verbindungen.\n\nAuch Port 80 ist keine Pflicht mehr. Wenn Sie ein eigenes HTTPS-Zertifikat haben — von Ihrem Anbieter oder aus Ihrer internen Zertifizierungsstelle —, legen Sie es in den Ordner „certs\" und der Server benutzt es. Port 80 brauchen Sie nur noch, wenn sich der Server sein Zertifikat selbst besorgen soll.\n\nWAS SIE EINMALIG TUN MÜSSEN\n\nDie Zugänge zu den Diensten, die Ihre Leads beschaffen und anreichern, tragen Sie im Portal ein: Leadgenerierung → Einstellungen → „Zugänge & KI\". Es sind Ihre eigenen Konten bei AWS, Apify, Apollo und handelsregister.ai; die Schlüssel werden verschlüsselt gespeichert und nirgends wieder angezeigt.\n\nDort finden Sie außerdem zwei neue Ansichten: die Formulierungen der KI-Texte, die Sie selbst anpassen können, und eine Übersicht der Hintergrund-Aufträge — was läuft, was wartet, was fehlgeschlagen ist und warum.\n\nWEITER VERBESSERT\n\nDie Kosten der KI-Aufrufe werden jetzt anhand des tatsächlichen Verbrauchs berechnet statt pauschal geschätzt. In der Kostenübersicht stehen damit die echten Beträge.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.7.3",
+      "publishedAt": "2026-08-03",
+      "label": "Korrektur am Installationsskript"
+    },
     {
       "version": "0.7.2",
       "publishedAt": "2026-08-03",
@@ -22,11 +27,6 @@
       "version": "0.6.2",
       "publishedAt": "2026-07-30",
       "label": "Tragfähig für größere Teams"
-    },
-    {
-      "version": "0.6.1",
-      "publishedAt": "2026-07-30",
-      "label": "Zu früherer Version zurückkehren"
     }
   ]
 }
