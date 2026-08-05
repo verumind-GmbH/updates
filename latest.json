@@ -1,8 +1,13 @@
 {
-  "version": "0.8.3",
+  "version": "0.8.4",
   "publishedAt": "2026-08-05",
-  "notes": "Verständlichere Meldungen und eine Korrektur bei den Freigaben.\n\nFREIGABEN BLEIBEN ERHALTEN\n\nWurde eine Abteilung gelöscht, blieben ihre Freigaben als unsichtbare Reste zurück. Sie zeigten ins Leere und ließen sich über die Oberfläche nicht mehr entfernen — zu einer gelöschten Abteilung gibt es kein Kästchen zum Abwählen. Beim nächsten Speichern wurden sie stillschweigend mitgeschleppt, und es sah so aus, als würde die Einstellung verworfen.\n\nSolche Reste werden jetzt beim Speichern entfernt, und beim Löschen einer Abteilung gehen ihre Freigaben gleich mit. Ihr Bestand bereinigt sich damit beim nächsten Speichern von selbst.\n\nDer Hinweis über der Freigabe-Auswahl sagt außerdem, was vorher fehlte: Eine Abteilung gibt für alle ihre Mitglieder frei — auch für die, die erst später dazukommen.\n\nMELDUNGEN, DIE WEITERHELFEN\n\nSchlägt die KI-Vorbefüllung des Firmenprofils fehl, stand dort bisher eine Rückfrage zu einer technischen Einstellung, die es nicht mehr gibt. Jetzt erscheint die tatsächliche Auskunft — etwa der Hinweis, dass die Website im Profil noch nicht gespeichert ist.\n\nKLEINERES\n\nAuf der Seite „Integrationen\" verwies ein Satz fest auf die Leadgenerierung. Er ist jetzt allgemein formuliert: Die Zugänge eines Fachmoduls stehen jeweils in dessen Einstellungen. Und das Namensfeld einer CRM-Verbindung schlägt kein fremdes Unternehmen mehr als Beispiel vor.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Eine Störung mitten in der Anreicherung wirft nicht mehr alles weg.\n\nWAS SICH ÄNDERT\n\nDie Anreicherung besteht aus mehreren Schritten: Website lesen, Impressum auswerten, den Text verdichten lassen, Ansprechpartner ermitteln, Handelsregister abfragen. Fiel der Verdichtungsschritt aus — etwa weil der KI-Dienst kurz nicht erreichbar war —, kam für den Lead bisher gar nichts an. Auch nicht die Angaben, die längst vorlagen.\n\nDas ist deshalb ärgerlich, weil Anschrift, Telefonnummer, E-Mail-Adresse, Registernummer und die vertretungsberechtigten Personen aus dem Impressum stammen und mit der KI nichts zu tun haben. Sie waren da und wurden verworfen.\n\nJetzt läuft die Anreicherung weiter: Diese Angaben kommen an, und nur die von der KI erzeugte Beschreibung (Branche, Leistungen, Kurzprofil) bleibt leer — statt erfunden zu werden. Sie lässt sich später mit einem erneuten Anreichern nachholen, ohne den bereits bezahlten Abruf zu wiederholen.\n\nKommt weder aus dem Impressum noch von der KI etwas zusammen, gilt der Lauf weiterhin als fehlgeschlagen. Ein Lead, der als angereichert gilt und keine einzige neue Angabe trägt, wäre die schlechtere Auskunft.\n\nKLARERE FEHLERMELDUNG\n\nSchlug ein KI-Aufruf endgültig fehl, stand in der Auftragsübersicht „Wird erneut versucht\" — obwohl alle Versuche bereits aufgebraucht waren. Wer das las, wartete auf etwas, das nicht mehr kam. Jetzt steht dort, dass aufgegeben wurde, und Sie können den Vorgang gezielt erneut anstoßen.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.3",
+      "publishedAt": "2026-08-05",
+      "label": "Verständlichere Meldungen, Korrektur bei den Freigaben"
+    },
     {
       "version": "0.8.2",
       "publishedAt": "2026-08-05",
@@ -22,11 +27,6 @@
       "version": "0.7.3",
       "publishedAt": "2026-08-03",
       "label": "Korrektur am Installationsskript"
-    },
-    {
-      "version": "0.7.2",
-      "publishedAt": "2026-08-03",
-      "label": "Installationspaket mit Anleitung"
     }
   ]
 }
