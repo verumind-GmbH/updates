@@ -1,8 +1,13 @@
 {
-  "version": "0.9.1",
+  "version": "0.9.2",
   "publishedAt": "2026-08-06",
-  "notes": "Ruhigere Bedienung im Unternehmensprofil.\n\nBisher sprang die Seite bei fast jedem Klick an den Anfang — beim Auf- und Zuklappen eines Abschnitts ebenso wie beim „+\"-Knopf; in Eingabefeldern mussten Sie nach jedem Zeichen neu hineinklicken. Jetzt bleibt der Abschnitt stehen, den Sie angefasst haben.\n\nEin übernommener KI-Vorschlag weicht einer Zeile und zählt nicht mehr als offene Arbeit; am Feld erscheint eine kleine Marke „KI\". Wieder anzeigen können Sie ihn jederzeit. Und die Liste unter „Dokument auswerten\" sagt jetzt, dass sie alle bisher hochgeladenen Dateien zeigt — und was die beiden Knöpfe daneben tun.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Der Hilfebereich funktioniert wieder — und enthält jetzt echte Anleitungen.\n\nDIE HILFE\n\nDas Öffnen eines Hilfe-Themas ließ die Seite einfrieren. Der Fehler ist behoben. Und die fünf Themen sind keine Platzhalter mehr: Aufbau der Oberfläche, der Weg von der Recherche bis zum bearbeiteten Lead, Konto und Sicherheit, Administration sowie die Einrichtung des E-Mail-Versands über Microsoft 365. Sie finden sie über das Fragezeichen in der Kopfzeile.\n\nUNTERBROCHENE VORGÄNGE BLEIBEN NICHT MEHR HÄNGEN\n\nWurde das Portal neu gestartet — etwa durch eine Aktualisierung —, während im Hintergrund gearbeitet wurde, blieb der betroffene Eintrag auf „läuft\" stehen: eine Gesprächsvorbereitung, ein E-Mail- oder Briefentwurf, eine Beschaffung oder die Auswertung eines Dokuments. Ohne Meldung, und beim Dokument ließ er sich nicht einmal neu starten.\n\nJetzt endet ein unterbrochener Vorgang nach rund einer Viertelstunde sichtbar als abgebrochen, mit verständlicher Begründung. Einträge, die schon vor dieser Aktualisierung hängen geblieben sind, bleiben dagegen stehen — die bitte einmal entfernen und neu anstoßen.\n\nUnter „Dokument auswerten\" sehen Sie zusätzlich, wie lange eine Auswertung schon läuft. „Erneut auswerten\" fragt vorher nach, weil es erneut kostet; neu hochladen müssen Sie die Datei dafür nicht. Läuft für sie noch eine Auswertung, wird ein zweiter Lauf abgewiesen.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.9.1",
+      "publishedAt": "2026-08-06",
+      "label": "Unternehmensprofil ohne Seitensprünge"
+    },
     {
       "version": "0.9.0",
       "publishedAt": "2026-08-06",
