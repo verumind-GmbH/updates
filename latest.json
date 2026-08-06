@@ -1,8 +1,13 @@
 {
-  "version": "0.8.6",
-  "publishedAt": "2026-08-05",
-  "notes": "Die Gesprächsvorbereitung nutzt jetzt Ihre eigene Einwandbehandlung.\n\nWAS SICH ÄNDERT\n\nIm Unternehmensprofil können Sie häufige Einwände samt empfohlener Antwort hinterlegen. Bei der E-Mail-Ansprache wurden sie bisher berücksichtigt, in der Gesprächsvorbereitung dagegen nicht — obwohl genau dort ein Abschnitt „Einwandbehandlung\" für den Anruf erzeugt wird.\n\nDie KI hat die Einwände deshalb selbst erfunden. Sie klangen plausibel, waren aber nicht die, auf die Ihr Vertrieb seine Antworten abgestimmt hat. Weil der Abschnitt gefüllt war, fiel das nicht auf.\n\nAb dieser Version fließen Ihre hinterlegten Einwände in die Vorbereitung ein. Ebenso die freien Abschnitte unter „Weitere Informationen\" — was Sie dort über Ihr Unternehmen festhalten, stand bisher nur den Textentwürfen zur Verfügung.\n\nCold-Mail-Vorlagen bleiben bewusst außen vor: Sie sind eine Formulierungshilfe für Texte, die verschickt werden, und in der internen Vorbereitung ohne Nutzen.\n\nWAS SIE TUN KÖNNEN\n\nBereits erstellte Briefings bleiben unverändert. Wählen Sie bei Bedarf „Briefing neu erstellen\" — die Vorbereitung greift dann auf Ihre gepflegten Einwände zurück.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "version": "0.9.0",
+  "publishedAt": "2026-08-06",
+  "notes": "Unterlagen ins Unternehmensprofil werfen — und schärfere Erstkontakt-Mails.\n\nDAS UNTERNEHMENSPROFIL ZIEHT UM UND WIRD DELEGIERBAR\n\nSie finden es jetzt unter Leadgenerierung → Unternehmensprofil statt unter Administration. Dort wird es auch ausgewertet: Briefing, E-Mail und Brief entstehen daraus.\n\nWichtiger noch: Sie müssen es nicht mehr selbst pflegen. Unter Leadgenerierung → Einstellungen → „Unternehmensprofil-Freigabe\" geben Sie einzelne Personen oder ganze Abteilungen dafür frei — so wie bei der Beschaffung. Wer das eigene Angebot am besten kennt, ist meist der Vertrieb und nicht die Person mit den Administrationsrechten. Ohne Freigabe bleibt alles wie bisher: nur für Administratoren sichtbar.\n\nDOKUMENTE STATT ABTIPPEN\n\nBisher konnte sich Ihr Unternehmensprofil nur aus Ihrer Website füllen. Alles andere mussten Sie von Hand eintragen — und gerade das Wertvollste liegt meist woanders: Mailvorlagen in Excel, Telefonleitfäden, Leistungsverzeichnisse, Präsentationen.\n\nAb dieser Version ziehen Sie die Datei einfach ins Unternehmensprofil (PDF, Excel, Word, PowerPoint, Text). Sie sagen vorher, wohin sie gehört — etwa „Cold-Mail-Vorlagen\" oder „Einwandbehandlung\" —, und die KI macht daraus einen Vorschlag. Übernommen wird nichts von allein: Sie entscheiden Abschnitt für Abschnitt, was ins Profil wandert.\n\nGemessen an einer echten Vorlagentabelle mit 20 Branchenblättern: 15 verwertbare Mailvorlagen aus einer Datei, in gut zwei Minuten.\n\nHinweis: Eingescannte PDFs enthalten nur Bilder und keinen Text. Laden Sie in dem Fall die Ursprungsdatei hoch — das Portal weist Sie darauf hin.\n\nERSTKONTAKT-MAILS NACH GEMESSENEN REGELN\n\nDie KI schreibt Ihre Erstkontakt-Mails jetzt nach Vorgaben aus einer Auswertung von mehreren hundert Millionen Vertriebsmails: Betreff mit zwei bis vier Wörtern, keine Ziffern, keine Werbewörter, sachlicher Ton; im Text 60 bis 120 Wörter, einfache Sprache und genau eine Frage.\n\nJede dieser Vorgaben steht dort, weil sie messbar mehr Antworten bringt. Enthält Ihr Profil Cold-Mail-Vorlagen, übernimmt die KI zusätzlich deren Aufbau und Tonfall.\n\nDAS UNTERNEHMENSPROFIL IST AUFGERÄUMT\n\nDie Seite war mit neun Abschnitten und den KI-Vorschlägen dazwischen sehr lang geworden. Jeder Abschnitt ist jetzt eine eigene Karte mit Anzahl und Vorschlags-Marke, eine Leiste oben springt hin, und leere Abschnitte starten zugeklappt. Jeder Vorschlag sagt außerdem, woher er stammt — aus Ihrer Website oder aus einer bestimmten Datei.\n\nWAS SIE TUN KÖNNEN\n\nÖffnen Sie Leadgenerierung → Unternehmensprofil und laden Sie eine Ihrer Vertriebsunterlagen hoch. Je vollständiger das Profil, desto besser werden Briefings, E-Mails und Briefe — was dort nicht steht, kann die KI nicht anbieten.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
   "rollbackVersions": [
+    {
+      "version": "0.8.6",
+      "publishedAt": "2026-08-05",
+      "label": "Gesprächsvorbereitung nutzt Ihre Einwandbehandlung"
+    },
     {
       "version": "0.8.5",
       "publishedAt": "2026-08-05",
@@ -22,11 +27,6 @@
       "version": "0.8.2",
       "publishedAt": "2026-08-05",
       "label": "Kosteneinstellungen überarbeitet"
-    },
-    {
-      "version": "0.8.1",
-      "publishedAt": "2026-08-05",
-      "label": "Bessere Anreicherung, keine doppelten Läufe"
     }
   ]
 }
