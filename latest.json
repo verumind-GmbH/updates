@@ -1,32 +1,12 @@
 {
-  "version": "0.9.0",
+  "version": "0.9.1",
   "publishedAt": "2026-08-06",
-  "notes": "Unterlagen ins Unternehmensprofil werfen — und schärfere Erstkontakt-Mails.\n\nDAS UNTERNEHMENSPROFIL ZIEHT UM UND WIRD DELEGIERBAR\n\nSie finden es jetzt unter Leadgenerierung → Unternehmensprofil statt unter Administration. Dort wird es auch ausgewertet: Briefing, E-Mail und Brief entstehen daraus.\n\nWichtiger noch: Sie müssen es nicht mehr selbst pflegen. Unter Leadgenerierung → Einstellungen → „Unternehmensprofil-Freigabe\" geben Sie einzelne Personen oder ganze Abteilungen dafür frei — so wie bei der Beschaffung. Wer das eigene Angebot am besten kennt, ist meist der Vertrieb und nicht die Person mit den Administrationsrechten. Ohne Freigabe bleibt alles wie bisher: nur für Administratoren sichtbar.\n\nDOKUMENTE STATT ABTIPPEN\n\nBisher konnte sich Ihr Unternehmensprofil nur aus Ihrer Website füllen. Alles andere mussten Sie von Hand eintragen — und gerade das Wertvollste liegt meist woanders: Mailvorlagen in Excel, Telefonleitfäden, Leistungsverzeichnisse, Präsentationen.\n\nAb dieser Version ziehen Sie die Datei einfach ins Unternehmensprofil (PDF, Excel, Word, PowerPoint, Text). Sie sagen vorher, wohin sie gehört — etwa „Cold-Mail-Vorlagen\" oder „Einwandbehandlung\" —, und die KI macht daraus einen Vorschlag. Übernommen wird nichts von allein: Sie entscheiden Abschnitt für Abschnitt, was ins Profil wandert.\n\nGemessen an einer echten Vorlagentabelle mit 20 Branchenblättern: 15 verwertbare Mailvorlagen aus einer Datei, in gut zwei Minuten.\n\nHinweis: Eingescannte PDFs enthalten nur Bilder und keinen Text. Laden Sie in dem Fall die Ursprungsdatei hoch — das Portal weist Sie darauf hin.\n\nERSTKONTAKT-MAILS NACH GEMESSENEN REGELN\n\nDie KI schreibt Ihre Erstkontakt-Mails jetzt nach Vorgaben aus einer Auswertung von mehreren hundert Millionen Vertriebsmails: Betreff mit zwei bis vier Wörtern, keine Ziffern, keine Werbewörter, sachlicher Ton; im Text 60 bis 120 Wörter, einfache Sprache und genau eine Frage.\n\nJede dieser Vorgaben steht dort, weil sie messbar mehr Antworten bringt. Enthält Ihr Profil Cold-Mail-Vorlagen, übernimmt die KI zusätzlich deren Aufbau und Tonfall.\n\nDAS UNTERNEHMENSPROFIL IST AUFGERÄUMT\n\nDie Seite war mit neun Abschnitten und den KI-Vorschlägen dazwischen sehr lang geworden. Jeder Abschnitt ist jetzt eine eigene Karte mit Anzahl und Vorschlags-Marke, eine Leiste oben springt hin, und leere Abschnitte starten zugeklappt. Jeder Vorschlag sagt außerdem, woher er stammt — aus Ihrer Website oder aus einer bestimmten Datei.\n\nWAS SIE TUN KÖNNEN\n\nÖffnen Sie Leadgenerierung → Unternehmensprofil und laden Sie eine Ihrer Vertriebsunterlagen hoch. Je vollständiger das Profil, desto besser werden Briefings, E-Mails und Briefe — was dort nicht steht, kann die KI nicht anbieten.\n\nIhre Daten und Einstellungen bleiben unverändert. Die Aktualisierung lässt sich jederzeit zurücknehmen.",
+  "notes": "Ruhigere Bedienung im Unternehmensprofil.\n\nBisher sprang die Seite bei fast jedem Klick an den Anfang — beim Auf- und Zuklappen eines Abschnitts ebenso wie beim „+\"-Knopf; in Eingabefeldern mussten Sie nach jedem Zeichen neu hineinklicken. Jetzt bleibt der Abschnitt stehen, den Sie angefasst haben.\n\nEin übernommener KI-Vorschlag weicht einer Zeile und zählt nicht mehr als offene Arbeit; am Feld erscheint eine kleine Marke „KI\". Wieder anzeigen können Sie ihn jederzeit. Und die Liste unter „Dokument auswerten\" sagt jetzt, dass sie alle bisher hochgeladenen Dateien zeigt — und was die beiden Knöpfe daneben tun.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
     {
-      "version": "0.8.6",
-      "publishedAt": "2026-08-05",
-      "label": "Gesprächsvorbereitung nutzt Ihre Einwandbehandlung"
-    },
-    {
-      "version": "0.8.5",
-      "publishedAt": "2026-08-05",
-      "label": "Gesprächsvorbereitung wieder vollständig"
-    },
-    {
-      "version": "0.8.4",
-      "publishedAt": "2026-08-05",
-      "label": "Störung mitten in der Anreicherung wirft nicht mehr alles weg"
-    },
-    {
-      "version": "0.8.3",
-      "publishedAt": "2026-08-05",
-      "label": "Verständlichere Meldungen, Korrektur bei den Freigaben"
-    },
-    {
-      "version": "0.8.2",
-      "publishedAt": "2026-08-05",
-      "label": "Kosteneinstellungen überarbeitet"
+      "version": "0.9.0",
+      "publishedAt": "2026-08-06",
+      "label": "Dokument-Import, Unternehmensprofil delegierbar"
     }
   ]
 }
