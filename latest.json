@@ -1,8 +1,13 @@
 {
-  "version": "0.9.4",
-  "publishedAt": "2026-08-08",
-  "notes": "Anmelden und Passwort setzen — und weniger Rauschen in der Übersicht.\n\nNEUE MITARBEITER KOMMEN JETZT HINEIN\n\nAuf der Seite, über die ein neuer Mitarbeiter sein Konto aktiviert, stand „mindestens 8 Zeichen\" — verlangt werden aber 12 plus Groß-, Kleinbuchstabe, Ziffer und Sonderzeichen. Schlimmer: Ein zu schwaches Passwort wurde als „Dieser Link ist ungültig oder abgelaufen\" gemeldet. Wer daraufhin einen neuen Link anforderte und dasselbe eintippte, drehte sich im Kreis — bis die Sperre gegen zu viele Anfragen griff.\n\nJetzt stehen die richtigen Regeln über dem Feld, und wenn etwas nicht passt, sagt das Portal woran es liegt. Dasselbe gilt für „Passwort ändern\" in den Einstellungen.\n\nMEHRERE ANMELDUNGEN AUS EINEM HAUS\n\nAnmeldung und Passwortwechsel waren auf fünf Versuche je Minute begrenzt — gezählt für Ihren gesamten Internetanschluss. Melden sich mehrere Mitarbeiter kurz nacheinander an, etwa bei einer Schulung oder morgens zum Arbeitsbeginn, sperrten sie sich gegenseitig aus. Gezählt wird jetzt je Benutzerkonto.\n\nFIRMENBESCHREIBUNGEN OHNE TECHNISCHE RESTE\n\nIn manchen angereicherten Leads endete die Firmenbeschreibung mit technischem Text aus der KI-Antwort. Das ist behoben. Bereits gespeicherte Beschreibungen bleiben unverändert — melden Sie sich, wenn wir sie bereinigen sollen.\n\nÜBERSICHT ÜBER DER LEADLISTE\n\nUnter „Letzte Aktionen\" stehen jetzt drei Einträge, die übrigen klappen Sie bei Bedarf auf. Und jede Aktion hat einen verständlichen Namen — vorher standen dort teilweise technische Bezeichnungen.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "version": "0.10.0",
+  "publishedAt": "2026-08-09",
+  "notes": "Keine Firma mehr zweimal — das Portal gleicht jetzt mit Salesforce ab.\n\nLEADS, DIE SIE SCHON HABEN, LANDEN AUF KEINEM SCHREIBTISCH\n\nBisher wusste die Beschaffung nichts davon, was in Salesforce bereits liegt. Ein Betrieb, den ein Kollege dort längst betreut, konnte ein zweites Mal im Arbeitsvorrat auftauchen — und wurde ein zweites Mal angerufen.\n\nAb sofort wird jeder gefundene Lead noch während der Beschaffung mit Salesforce abgeglichen, über die Internetadresse und den Firmennamen. Gibt es die Firma dort schon — als Lead oder als Kunde beziehungsweise Opportunity — bleibt der Lead in der Liste, wird als Dublette gekennzeichnet und an niemanden vergeben: Er erscheint nicht im Pool, das automatische Auffüllen übergeht ihn, und „Übernehmen\" wird nicht angeboten.\n\nSIE SEHEN SOFORT, WAS SCHON BEKANNT WAR\n\nNach jedem Beschaffungslauf steht über der Ergebnisliste, wie viele der gefundenen Firmen bereits in Salesforce liegen — ein Klick auf „Anzeigen\" zeigt genau diese. Dauerhaft geht das über das neue Feld „Im CRM\" in der Beschaffung: alle Leads, nur Dubletten oder ohne Dubletten. In der Lauf-Auswahl steht die Zahl gleich mit dabei.\n\nAUCH BEIM ÜBERGEBEN WIRD GEPRÜFT\n\nZwischen Beschaffung und Übergabe können Wochen liegen, in denen jemand denselben Interessenten von Hand in Salesforce anlegt. Deshalb fragt das Portal unmittelbar vor dem Senden noch einmal nach. Liegt die Firma dort bereits, wird nichts übertragen und Ihnen der vorhandene Datensatz genannt. Ist Salesforce gerade nicht erreichbar, wird ebenfalls nichts gesendet — ohne Antwort lässt sich nicht sagen, ob die Firma schon dort ist.\n\nEin Hinweis dazu: Leads, die vor dieser Aktualisierung beschafft wurden, tragen noch keine Kennzeichnung. Beim Übergeben ans CRM werden auch sie geprüft.\n\n„MIT KI VORAUSFÜLLEN\" IM UNTERNEHMENSPROFIL\n\nDie Auswertung der eigenen Website scheiterte gelegentlich mit einer technischen Fehlermeldung, wenn im Text ein Anführungszeichen stand. Das ist behoben.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.9.4",
+      "publishedAt": "2026-08-08",
+      "label": "Passwort setzen, Anmeldungen aus einem Haus, weniger Rauschen"
+    },
     {
       "version": "0.9.3",
       "publishedAt": "2026-08-07",
@@ -17,11 +22,6 @@
       "version": "0.9.1",
       "publishedAt": "2026-08-06",
       "label": "Unternehmensprofil ohne Seitensprünge"
-    },
-    {
-      "version": "0.9.0",
-      "publishedAt": "2026-08-06",
-      "label": "Dokument-Import, Unternehmensprofil delegierbar"
     }
   ]
 }
