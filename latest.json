@@ -1,8 +1,13 @@
 {
-  "version": "0.10.1",
+  "version": "0.11.1",
   "publishedAt": "2026-08-10",
-  "notes": "Beschaffung: richtiger Preis, vollständige Daten, unterscheidbare Bewertungen.\n\nEIN BESCHAFFUNGSLAUF KOSTET WIEDER CENTBETRÄGE\n\nSeit dem Umbau der Abläufe ins Portal wurden bei jedem Beschaffungslauf zwei kostenpflichtige Zusatzleistungen mitbestellt, die je Datensatz abgerechnet werden. Ein Lauf über 20 Orte kostete dadurch rund 9,60 $ statt weniger Cent — und die dafür bezogenen Personendaten wurden anschließend verworfen, weil die Personenanreicherung ausgeschaltet war.\n\nBeides ist abgestellt. Gemessen an einem Lauf über 30 Orte: 0,15 $ statt hochgerechnet 14 $. Zusätzlich begrenzt das Portal die Kosten eines Laufs jetzt selbst und meldet es, falls ein Lauf an diese Grenze stößt.\n\nTELEFONNUMMER UND FIRMEN-E-MAIL KOMMEN WIEDER AN\n\nBeim selben Umbau ging verloren, dass die von Google Maps gelieferte Telefonnummer und die Firmenadresse (info@…) in den Lead übernommen werden. Im Testlauf betraf das alle 30 Leads. Beides steht wieder im Lead — im letzten Lauf 30 von 30 Telefonnummern und 23 von 30 E-Mail-Adressen.\n\nBEWERTUNGEN LASSEN SICH WIEDER UNTERSCHEIDEN\n\nWeil Telefon und E-Mail bei jedem Lead fehlten, hatten frisch beschaffte Leads alle denselben Score — es gab nichts zu bevorzugen. Mit den wiederhergestellten Feldern streuen die Werte wieder (im Testlauf zwischen 29 und 65).\n\nAußerdem wird eine geschätzte Mitarbeiterzahl wieder als Schätzung geführt. Sie wurde bisher beim Import wie eine belegte Angabe behandelt und ging deshalb mit voller statt halber Gewichtung in den Score ein — eine geratene Zahl sah aus wie eine aus dem Handelsregister.\n\nBereits beschaffte Leads behalten ihre bisherige Bewertung; die Änderungen wirken ab dem nächsten Lauf.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Die Beschaffung ist übersichtlicher geworden — und trifft die gewünschte Branche besser.\n\nBESCHAFFEN UND DURCHSEHEN SIND JETZT GETRENNT\n\nBranche und Ort standen bisher in der Filterleiste ganz oben und steuerten zwei Dinge gleichzeitig: die nächste Beschaffung UND die angezeigte Liste. Wer die Liste umfiltern wollte, änderte damit unbemerkt, wonach der nächste Lauf sucht.\n\nJetzt gibt es zwei klar getrennte Bereiche: „Neue Leads beschaffen\" mit eigenen Feldern, und darunter „Beschaffte Leads\" zum Durchsehen und Verteilen. Was Sie unten filtern, löst nichts aus und kostet nichts.\n\nSIE SEHEN, WAS GERADE PASSIERT\n\nWährend einer Beschaffung stand bisher nur ein Ladesymbol. Jetzt steht daneben, welcher Schritt läuft — „Google Maps durchsucht die Region — seit 2 Minuten\", „30 Orte gefunden, werden ausgewertet\", „Abgleich mit dem CRM\".\n\nUnd das Ergebnis erscheint von selbst. Bisher brach die Anzeige nach zwei Minuten ab; ein Lauf dauert aber oft länger, und die neuen Leads tauchten erst nach einem Neuladen der Seite auf.\n\nDIE GEWÜNSCHTE BRANCHE WIRD BESSER GETROFFEN\n\nGesucht wurde bisher mit der Bezeichnung aus unserer Branchenliste. Unter „Industrie & Produktion\" trägt sich bei Google aber kein Betrieb ein — entsprechend weit lagen die Ergebnisse daneben. Jede Branche hat jetzt branchenübliche Suchbegriffe. Der Lauf kostet dadurch nicht mehr, weil die angefragte Ortszahl auf die Begriffe aufgeteilt wird. Nach dem Lauf sehen Sie außerdem, wie viele der gefundenen Firmen tatsächlich in der gewählten Branche liegen.\n\nWAS NOCH ZU VERTEILEN IST, SIEHT MAN AUF EINEN BLICK\n\nÜber der Liste steht ein Umschalter „Alle / Nicht zugewiesen / Zugewiesen\" mit der Anzahl daran, und ein Hinweis führt mit einem Klick zu den Leads, die noch auf einen Mitarbeiter warten.\n\nERLEDIGTE LEADS STEHEN NICHT MEHR IM WEG\n\nLeads auf „Uninteressant\" oder „Kontaktiert\" sind aus den Arbeitslisten ausgeblendet — kontaktierte werden im CRM weitergepflegt. Sie sind nicht weg: Ein Umschalter „Offen / Erledigt / Alle\" holt sie zurück. Ein übergebener Lead trägt am Status zusätzlich den Vermerk „im CRM\".\n\nDIE LISTEN KÖNNEN JETZT ÜBERALL DASSELBE\n\nIn der Beschaffung lässt sich nun ebenfalls per Klick auf den Spaltennamen sortieren, Spalten lassen sich aus- und einblenden und in der Reihenfolge verschieben. Ihre Spaltenansicht gilt in beiden Listen. Neu wählbar ist die Bilanzsumme; das Geschäftsjahr steht im Hinweis an der Zelle.\n\nAußerdem wirkt die Auswahl „Einträge pro Seite\" wieder — und die Leadliste zeigt nicht länger nur die ersten 100 Leads.\n\nEINSTELLUNGEN AUFGERÄUMT\n\nDie Bereiche heißen jetzt nach dem, was darin steht. Alle Freigaben („wer darf was\") liegen an einer Stelle statt verteilt auf drei Reiter. Support-Kontakt und Diagnose finden Sie unter „Lizenz & Support\".\n\nLESBARKEIT IM DUNKELMODUS\n\nMehrere Überschriften und Textstellen waren im dunklen Erscheinungsbild praktisch unsichtbar — dunkelblaue Schrift auf dunkelgrauem Grund. Das ist behoben, auch auf den Anmeldeseiten.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.10.1",
+      "publishedAt": "2026-08-10",
+      "label": "Beschaffung: richtiger Preis, vollständige Daten, unterscheidbare Bewertungen"
+    },
     {
       "version": "0.10.0",
       "publishedAt": "2026-08-09",
@@ -17,11 +22,6 @@
       "version": "0.9.3",
       "publishedAt": "2026-08-07",
       "label": "Freigaben bleiben erhalten, Picken aus der Detailansicht"
-    },
-    {
-      "version": "0.9.2",
-      "publishedAt": "2026-08-06",
-      "label": "Hilfebereich behoben, unterbrochene Vorgänge enden sichtbar"
     }
   ]
 }
