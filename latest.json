@@ -1,8 +1,13 @@
 {
-  "version": "0.10.0",
-  "publishedAt": "2026-08-09",
-  "notes": "Keine Firma mehr zweimal — das Portal gleicht jetzt mit Salesforce ab.\n\nLEADS, DIE SIE SCHON HABEN, LANDEN AUF KEINEM SCHREIBTISCH\n\nBisher wusste die Beschaffung nichts davon, was in Salesforce bereits liegt. Ein Betrieb, den ein Kollege dort längst betreut, konnte ein zweites Mal im Arbeitsvorrat auftauchen — und wurde ein zweites Mal angerufen.\n\nAb sofort wird jeder gefundene Lead noch während der Beschaffung mit Salesforce abgeglichen, über die Internetadresse und den Firmennamen. Gibt es die Firma dort schon — als Lead oder als Kunde beziehungsweise Opportunity — bleibt der Lead in der Liste, wird als Dublette gekennzeichnet und an niemanden vergeben: Er erscheint nicht im Pool, das automatische Auffüllen übergeht ihn, und „Übernehmen\" wird nicht angeboten.\n\nSIE SEHEN SOFORT, WAS SCHON BEKANNT WAR\n\nNach jedem Beschaffungslauf steht über der Ergebnisliste, wie viele der gefundenen Firmen bereits in Salesforce liegen — ein Klick auf „Anzeigen\" zeigt genau diese. Dauerhaft geht das über das neue Feld „Im CRM\" in der Beschaffung: alle Leads, nur Dubletten oder ohne Dubletten. In der Lauf-Auswahl steht die Zahl gleich mit dabei.\n\nAUCH BEIM ÜBERGEBEN WIRD GEPRÜFT\n\nZwischen Beschaffung und Übergabe können Wochen liegen, in denen jemand denselben Interessenten von Hand in Salesforce anlegt. Deshalb fragt das Portal unmittelbar vor dem Senden noch einmal nach. Liegt die Firma dort bereits, wird nichts übertragen und Ihnen der vorhandene Datensatz genannt. Ist Salesforce gerade nicht erreichbar, wird ebenfalls nichts gesendet — ohne Antwort lässt sich nicht sagen, ob die Firma schon dort ist.\n\nEin Hinweis dazu: Leads, die vor dieser Aktualisierung beschafft wurden, tragen noch keine Kennzeichnung. Beim Übergeben ans CRM werden auch sie geprüft.\n\n„MIT KI VORAUSFÜLLEN\" IM UNTERNEHMENSPROFIL\n\nDie Auswertung der eigenen Website scheiterte gelegentlich mit einer technischen Fehlermeldung, wenn im Text ein Anführungszeichen stand. Das ist behoben.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "version": "0.10.1",
+  "publishedAt": "2026-08-10",
+  "notes": "Beschaffung: richtiger Preis, vollständige Daten, unterscheidbare Bewertungen.\n\nEIN BESCHAFFUNGSLAUF KOSTET WIEDER CENTBETRÄGE\n\nSeit dem Umbau der Abläufe ins Portal wurden bei jedem Beschaffungslauf zwei kostenpflichtige Zusatzleistungen mitbestellt, die je Datensatz abgerechnet werden. Ein Lauf über 20 Orte kostete dadurch rund 9,60 $ statt weniger Cent — und die dafür bezogenen Personendaten wurden anschließend verworfen, weil die Personenanreicherung ausgeschaltet war.\n\nBeides ist abgestellt. Gemessen an einem Lauf über 30 Orte: 0,15 $ statt hochgerechnet 14 $. Zusätzlich begrenzt das Portal die Kosten eines Laufs jetzt selbst und meldet es, falls ein Lauf an diese Grenze stößt.\n\nTELEFONNUMMER UND FIRMEN-E-MAIL KOMMEN WIEDER AN\n\nBeim selben Umbau ging verloren, dass die von Google Maps gelieferte Telefonnummer und die Firmenadresse (info@…) in den Lead übernommen werden. Im Testlauf betraf das alle 30 Leads. Beides steht wieder im Lead — im letzten Lauf 30 von 30 Telefonnummern und 23 von 30 E-Mail-Adressen.\n\nBEWERTUNGEN LASSEN SICH WIEDER UNTERSCHEIDEN\n\nWeil Telefon und E-Mail bei jedem Lead fehlten, hatten frisch beschaffte Leads alle denselben Score — es gab nichts zu bevorzugen. Mit den wiederhergestellten Feldern streuen die Werte wieder (im Testlauf zwischen 29 und 65).\n\nAußerdem wird eine geschätzte Mitarbeiterzahl wieder als Schätzung geführt. Sie wurde bisher beim Import wie eine belegte Angabe behandelt und ging deshalb mit voller statt halber Gewichtung in den Score ein — eine geratene Zahl sah aus wie eine aus dem Handelsregister.\n\nBereits beschaffte Leads behalten ihre bisherige Bewertung; die Änderungen wirken ab dem nächsten Lauf.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.10.0",
+      "publishedAt": "2026-08-09",
+      "label": "Dublettenprüfung gegen Salesforce"
+    },
     {
       "version": "0.9.4",
       "publishedAt": "2026-08-08",
@@ -17,11 +22,6 @@
       "version": "0.9.2",
       "publishedAt": "2026-08-06",
       "label": "Hilfebereich behoben, unterbrochene Vorgänge enden sichtbar"
-    },
-    {
-      "version": "0.9.1",
-      "publishedAt": "2026-08-06",
-      "label": "Unternehmensprofil ohne Seitensprünge"
     }
   ]
 }
