@@ -1,8 +1,13 @@
 {
-  "version": "0.14.0",
+  "version": "0.15.0",
   "publishedAt": "2026-08-11",
-  "notes": "Ein Abteilungsprofil kann jetzt entscheiden, was es aus dem allgemeinen Profil übernimmt — und was nicht.\n\nANSEHEN, ÜBERNEHMEN ODER ABSCHALTEN\n\nFührt eine Abteilung einen Abschnitt nicht selbst, erbt sie ihn vom allgemeinen Profil. Das ist meistens richtig und manchmal falsch: Passt etwa die Einwandbehandlung des Hauses für ein Team nicht, stand sie trotzdem in jeder Mail, und dagegen half nur eine Scheinantwort im Formular.\n\nIn jedem Abschnitt steht deshalb jetzt ein Kasten mit dem, was das allgemeine Profil dazu enthält:\n\n• „ansehen\" klappt die Einträge auf — Einwand mit Antwort, Produkt mit Beschreibung, Referenz mit Branche.\n• „Übernehmen\" holt einen Eintrag oder alle ins eigene Profil. Danach gehört der Inhalt dem Team und lässt sich anpassen, ohne das allgemeine Profil zu verändern.\n• „Nicht verwenden\" lässt den Abschnitt für dieses Team leer. Weder das Briefing noch ein Entwurf greift dann darauf zu. „Doch wieder erben\" nimmt es zurück.\n\nTragen Sie in einem abgeschalteten Abschnitt später doch etwas ein, gilt Ihr Eintrag — eigener Inhalt geht immer vor.\n\nDAS FORMULAR ZEIGT NUR NOCH, WAS DEM TEAM GEHÖRT\n\nBisher standen dort auch die geerbten Inhalte. Das hatte eine unangenehme Folge: Ein einziger Klick auf „Speichern\" machte aus jedem geerbten Abschnitt eine eigene Kopie — spätere Änderungen des allgemeinen Profils kamen bei diesem Team dann nicht mehr an, ohne dass jemand etwas entschieden hätte. Geerbte Abschnitte bleiben im Formular jetzt leer und stehen stattdessen im Kasten darüber.\n\nEIN KLEINES HAUS ZEIGT DIE HERKUNFT\n\nSteht ein Eintrag wortgleich auch im allgemeinen Profil, trägt er ein kleines Haus. Sie sehen damit auf einen Blick, was übernommen und was selbst formuliert ist; ändern Sie den Wortlaut, verschwindet das Zeichen.\n\nWichtig: Ein übernommener Eintrag ist eine Kopie. Ändert das Haus ihn später, bleibt Ihrer, wie er ist. Automatisch mit wächst nur ein Abschnitt, den das Team gar nicht führt.\n\nVORSCHLÄGE ZEIGEN NUR NOCH, WAS FEHLT\n\nDas gilt für beide Arten von Vorschlägen — aus dem allgemeinen Profil und aus der KI-Auswertung von Website und Dokumenten. Was bereits im Formular steht, erscheint nicht mehr als Vorschlag; bleibt nichts offen, verschwindet der Kasten ganz. Bisher stand ein KI-Vorschlag auch dann noch vollständig da, wenn längst jeder Eintrag daraus übernommen war.\n\nIhre Daten und Einstellungen bleiben unverändert. Solange keine Abteilung ein eigenes Profil pflegt, ändert sich für Sie nichts.",
+  "notes": "Das Unternehmensprofil ist übersichtlicher geworden — und zeigt an jedem Abschnitt eindeutig, was gilt.\n\nEIN ZUSTAND JE ABSCHNITT\n\nBisher lagen in einer Abteilungsansicht drei Darstellungen desselben Abschnitts übereinander: die geerbten Einträge, darunter „Noch keine Produkte\", darunter derselbe KI-Vorschlag noch einmal. Was nun gilt, war daraus nicht zu erkennen.\n\nJeder Abschnitt hat jetzt sichtbar genau einen Zustand:\n\n• geerbt — ein gelber Kasten mit den Einträgen des allgemeinen Profils. Sie gelten und bleiben automatisch aktuell. Zwei Knöpfe daneben: „Eigene Fassung anlegen\" und „Nicht verwenden\".\n• eigene Fassung — die gewohnte Liste zum Bearbeiten, dazu der Hinweis, was aus dem allgemeinen Profil hier noch fehlt.\n• nicht verwendet — eine graue Zeile mit „Doch wieder erben\".\n\nDie Zahl neben einem Abschnitt zählt jetzt, was dort gilt. An einem geerbten Abschnitt stand vorher nichts, während der Kasten darunter sieben Einträge meldete.\n\nBEHOBEN: EIN NEUER EINTRAG KONNTE GEERBTE VERDRÄNGEN\n\nEin Abschnitt galt als eigener, sobald er irgendetwas enthielt. In einem geerbten Abschnitt mit sieben Einträgen genügte deshalb ein einziges hinzugefügtes Produkt, und die anderen sieben waren aus dem wirksamen Profil verschwunden — ohne Hinweis, denn im Formular hatten sie nie gestanden.\n\nJetzt nimmt jede Änderung an einem geerbten Abschnitt das Geerbte mit ins Formular. Sie arbeiten an genau der Liste weiter, die Sie vorher gesehen haben. Und mit „Wieder erben\" kommen Sie zurück, ohne jede Zeile einzeln löschen zu müssen.\n\nVORSCHLÄGE VERGLEICHEN GEGEN DAS, WAS GILT\n\nEin KI-Vorschlag aus Website oder Dokument wurde in einer Abteilungsansicht vollständig angezeigt, obwohl jeder Eintrag daraus bereits geerbt war — verglichen wurde nur mit dem Formular, und das war leer. Jetzt zählt, was tatsächlich gilt.\n\nWENIGER AUF EINMAL\n\nDie Abschnitte beginnen zugeklappt. Die Seite ist damit zunächst eine Übersicht mit Anzahl und Herkunft; Sie klappen auf, was Sie ändern wollen. Website- und Dokument-Auswertung liegen zusammen in einem zugeklappten Bereich, dessen Kopfzeile meldet, ob gerade etwas läuft und wie viele Vorschläge offen sind.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.14.0",
+      "publishedAt": "2026-08-11",
+      "label": "Geerbte Abschnitte übernehmen oder abschalten"
+    },
     {
       "version": "0.13.0",
       "publishedAt": "2026-08-11",
@@ -17,11 +22,6 @@
       "version": "0.11.1",
       "publishedAt": "2026-08-10",
       "label": "Beschaffung getrennt, Branchen genauer, Einstellungen geordnet"
-    },
-    {
-      "version": "0.10.1",
-      "publishedAt": "2026-08-10",
-      "label": "Beschaffung: richtiger Preis, vollständige Daten, unterscheidbare Bewertungen"
     }
   ]
 }
