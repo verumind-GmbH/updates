@@ -1,8 +1,13 @@
 {
-  "version": "0.12.0",
-  "publishedAt": "2026-08-10",
-  "notes": "Die Website steht wieder in der Kurzübersicht — und wird notfalls aus der E-Mail-Adresse abgeleitet.\n\nWEBSITE, TELEFON UND ORT WAREN IN DER KURZÜBERSICHT LEER\n\nIn der Übersicht über einem Lead stand „Website —\", während weiter unten sehr wohl eine Website hinterlegt war. Der Grund lag tiefer als ein fehlender Wert: Die Übersicht las an einer Stelle nach, an der die Adresse nie steht. Betroffen war damit jeder Lead.\n\nDieselbe Lücke gab es bei Telefon, E-Mail, Ort und Mitarbeiterzahl — dort blieb die Zeile leer, sobald die Angabe nur aus der Anreicherung stammte. Die Übersicht sieht jetzt an beiden Stellen nach.\n\nFEHLT DIE WEBSITE, WIRD SIE VORGESCHLAGEN\n\nIst zu einem Lead keine Website bekannt, wohl aber eine E-Mail-Adresse, zeigt die Übersicht die Domain daraus — aus einer Adresse bei „porsche.de\" also porsche.de. Der Vorschlag ist als **unbestätigt** gekennzeichnet und wird zunächst nur angezeigt: Weder der Abgleich mit Salesforce noch die Anreicherung greifen darauf zu.\n\nDaneben steht **Bestätigen**. Sehen Sie vorher auf der Seite nach, ob es die richtige Firma ist — mit dem Klick wird der Vorschlag zur hinterlegten Website, erscheint in den Firmendaten mit der Quelle „von Hand bestätigt\" und wird ab dann auch für Abgleich und Anreicherung verwendet. Deshalb der Klick und keine Automatik.\n\nBei Adressen von Frei-Mail-Anbietern (Gmail, GMX, web.de, T-Online und weitere) unterbleibt der Vorschlag: Deren Domain sagt nichts über die Firma.\n\n„ANGEREICHERTE DATEN\" HEISST JETZT „FIRMENDATEN\"\n\nDer Kasten steht auch bei einem Lead, der nie angereichert wurde: Ort, Website und Branche kommen aus der Beschaffung, die Jahresabschlusszahlen aus dem Handelsregister. Der alte Name behauptete einen Schritt, der oft gar nicht stattgefunden hatte.\n\nHILFE AUF DEM AKTUELLEN STAND\n\nDie Hilfetexte verwiesen nach der Umbenennung der Einstellungen noch auf Bereiche, die es nicht mehr gibt. Alle Wege sind berichtigt. Ergänzt wurden außerdem die Beschreibungen der neuen Beschaffungsseite, der ausgeblendeten erledigten Leads und der einstellbaren Spalten.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "version": "0.13.0",
+  "publishedAt": "2026-08-11",
+  "notes": "Das Unternehmensprofil kann jetzt je Abteilung geführt werden.\n\nEIN PROFIL JE VERTRIEBSTEAM\n\nVerkaufen Ihre Teams Unterschiedliches, mussten sie sich bisher ein einziges Unternehmensprofil teilen — und jeder KI-Text trug die Mischung aus allem. Über dem Formular steht jetzt die Auswahl „Profil für\": entweder das allgemeine Profil für das ganze Haus oder das einer Abteilung.\n\nGetrennt geführt werden können Produkte, Idealkundenprofil, Pain Points und USPs, Referenzkunden, Cold-Mail-Vorlagen, Einwandbehandlung sowie die eigenen Abschnitte. Firmenname, Firmen-Website und Kurzbeschreibung bleiben gemeinsam: Sie beschreiben das Haus und gelten für alle gleich.\n\nWAS EIN TEAM NICHT SELBST PFLEGT, ERBT ES\n\nEine Abteilung muss nicht alles ausfüllen. Neben jedem Abschnitt steht, woher sein Inhalt kommt — „eigene\" oder „vom allgemeinen Profil\". Tragen Sie in einem geerbten Abschnitt etwas ein und speichern, gehört er ab dann diesem Team; leeren Sie ihn wieder, erbt er erneut vom allgemeinen Profil.\n\nWELCHES PROFIL IN EINEN TEXT GEHT\n\nDas entscheidet der Lead, nicht die Person am Bildschirm: Es zählt die Abteilung dessen, dem der Lead zugewiesen ist. Erzeugt eine Administratorin ein Briefing für den Lead eines Kollegen, handelt der Text von den Produkten seines Teams — nicht von ihren. Ist der Lead niemandem zugewiesen, gilt die Abteilung dessen, der den Text erzeugt. Das betrifft KI-Briefing, E-Mail- und Brief-Entwurf gleichermaßen.\n\nWER WAS ÄNDERN DARF\n\nAdministratoren jedes Profil. Wer die Freigabe „Unternehmensprofil pflegen\" hat, das allgemeine Profil und das der eigenen Abteilung; ein fremdes Abteilungsprofil bleibt gesperrt.\n\nSolange keine Abteilung ein eigenes Profil pflegt, ändert sich für Sie nichts — es gilt überall weiterhin das bisherige Profil. Ihre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.12.0",
+      "publishedAt": "2026-08-10",
+      "label": "Website in der Kurzübersicht, Vorschlag aus der E-Mail-Adresse"
+    },
     {
       "version": "0.11.1",
       "publishedAt": "2026-08-10",
@@ -17,11 +22,6 @@
       "version": "0.10.0",
       "publishedAt": "2026-08-09",
       "label": "Dublettenprüfung gegen Salesforce"
-    },
-    {
-      "version": "0.9.4",
-      "publishedAt": "2026-08-08",
-      "label": "Passwort setzen, Anmeldungen aus einem Haus, weniger Rauschen"
     }
   ]
 }
