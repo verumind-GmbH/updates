@@ -1,8 +1,13 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "publishedAt": "2026-08-11",
-  "notes": "Das Unternehmensprofil kann jetzt je Abteilung geführt werden.\n\nEIN PROFIL JE VERTRIEBSTEAM\n\nVerkaufen Ihre Teams Unterschiedliches, mussten sie sich bisher ein einziges Unternehmensprofil teilen — und jeder KI-Text trug die Mischung aus allem. Über dem Formular steht jetzt die Auswahl „Profil für\": entweder das allgemeine Profil für das ganze Haus oder das einer Abteilung.\n\nGetrennt geführt werden können Produkte, Idealkundenprofil, Pain Points und USPs, Referenzkunden, Cold-Mail-Vorlagen, Einwandbehandlung sowie die eigenen Abschnitte. Firmenname, Firmen-Website und Kurzbeschreibung bleiben gemeinsam: Sie beschreiben das Haus und gelten für alle gleich.\n\nWAS EIN TEAM NICHT SELBST PFLEGT, ERBT ES\n\nEine Abteilung muss nicht alles ausfüllen. Neben jedem Abschnitt steht, woher sein Inhalt kommt — „eigene\" oder „vom allgemeinen Profil\". Tragen Sie in einem geerbten Abschnitt etwas ein und speichern, gehört er ab dann diesem Team; leeren Sie ihn wieder, erbt er erneut vom allgemeinen Profil.\n\nWELCHES PROFIL IN EINEN TEXT GEHT\n\nDas entscheidet der Lead, nicht die Person am Bildschirm: Es zählt die Abteilung dessen, dem der Lead zugewiesen ist. Erzeugt eine Administratorin ein Briefing für den Lead eines Kollegen, handelt der Text von den Produkten seines Teams — nicht von ihren. Ist der Lead niemandem zugewiesen, gilt die Abteilung dessen, der den Text erzeugt. Das betrifft KI-Briefing, E-Mail- und Brief-Entwurf gleichermaßen.\n\nWER WAS ÄNDERN DARF\n\nAdministratoren jedes Profil. Wer die Freigabe „Unternehmensprofil pflegen\" hat, das allgemeine Profil und das der eigenen Abteilung; ein fremdes Abteilungsprofil bleibt gesperrt.\n\nSolange keine Abteilung ein eigenes Profil pflegt, ändert sich für Sie nichts — es gilt überall weiterhin das bisherige Profil. Ihre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Ein Abteilungsprofil kann jetzt entscheiden, was es aus dem allgemeinen Profil übernimmt — und was nicht.\n\nANSEHEN, ÜBERNEHMEN ODER ABSCHALTEN\n\nFührt eine Abteilung einen Abschnitt nicht selbst, erbt sie ihn vom allgemeinen Profil. Das ist meistens richtig und manchmal falsch: Passt etwa die Einwandbehandlung des Hauses für ein Team nicht, stand sie trotzdem in jeder Mail, und dagegen half nur eine Scheinantwort im Formular.\n\nIn jedem Abschnitt steht deshalb jetzt ein Kasten mit dem, was das allgemeine Profil dazu enthält:\n\n• „ansehen\" klappt die Einträge auf — Einwand mit Antwort, Produkt mit Beschreibung, Referenz mit Branche.\n• „Übernehmen\" holt einen Eintrag oder alle ins eigene Profil. Danach gehört der Inhalt dem Team und lässt sich anpassen, ohne das allgemeine Profil zu verändern.\n• „Nicht verwenden\" lässt den Abschnitt für dieses Team leer. Weder das Briefing noch ein Entwurf greift dann darauf zu. „Doch wieder erben\" nimmt es zurück.\n\nTragen Sie in einem abgeschalteten Abschnitt später doch etwas ein, gilt Ihr Eintrag — eigener Inhalt geht immer vor.\n\nDAS FORMULAR ZEIGT NUR NOCH, WAS DEM TEAM GEHÖRT\n\nBisher standen dort auch die geerbten Inhalte. Das hatte eine unangenehme Folge: Ein einziger Klick auf „Speichern\" machte aus jedem geerbten Abschnitt eine eigene Kopie — spätere Änderungen des allgemeinen Profils kamen bei diesem Team dann nicht mehr an, ohne dass jemand etwas entschieden hätte. Geerbte Abschnitte bleiben im Formular jetzt leer und stehen stattdessen im Kasten darüber.\n\nEIN KLEINES HAUS ZEIGT DIE HERKUNFT\n\nSteht ein Eintrag wortgleich auch im allgemeinen Profil, trägt er ein kleines Haus. Sie sehen damit auf einen Blick, was übernommen und was selbst formuliert ist; ändern Sie den Wortlaut, verschwindet das Zeichen.\n\nWichtig: Ein übernommener Eintrag ist eine Kopie. Ändert das Haus ihn später, bleibt Ihrer, wie er ist. Automatisch mit wächst nur ein Abschnitt, den das Team gar nicht führt.\n\nVORSCHLÄGE ZEIGEN NUR NOCH, WAS FEHLT\n\nDas gilt für beide Arten von Vorschlägen — aus dem allgemeinen Profil und aus der KI-Auswertung von Website und Dokumenten. Was bereits im Formular steht, erscheint nicht mehr als Vorschlag; bleibt nichts offen, verschwindet der Kasten ganz. Bisher stand ein KI-Vorschlag auch dann noch vollständig da, wenn längst jeder Eintrag daraus übernommen war.\n\nIhre Daten und Einstellungen bleiben unverändert. Solange keine Abteilung ein eigenes Profil pflegt, ändert sich für Sie nichts.",
   "rollbackVersions": [
+    {
+      "version": "0.13.0",
+      "publishedAt": "2026-08-11",
+      "label": "Unternehmensprofil je Abteilung"
+    },
     {
       "version": "0.12.0",
       "publishedAt": "2026-08-10",
@@ -17,11 +22,6 @@
       "version": "0.10.1",
       "publishedAt": "2026-08-10",
       "label": "Beschaffung: richtiger Preis, vollständige Daten, unterscheidbare Bewertungen"
-    },
-    {
-      "version": "0.10.0",
-      "publishedAt": "2026-08-09",
-      "label": "Dublettenprüfung gegen Salesforce"
     }
   ]
 }
