@@ -1,8 +1,13 @@
 {
-  "version": "0.17.0",
+  "version": "0.18.0",
   "publishedAt": "2026-08-12",
-  "notes": "Zwei Stellen, an denen die Arbeit an einem Lead stehen blieb.\n\n„FIRMA ABWEICHEND\" IST KEINE EINBAHNSTRASSE MEHR\n\nFindet die Anreicherung auf der hinterlegten Website eine ANDERE Firma, werden die Funde zurückgehalten und Outreach gesperrt — richtig, denn sonst handelt Ihr Anschreiben von einem fremden Unternehmen.\n\nNur gab es bisher keinen Weg zurück. Erneut anreichern führt zum selben Ergebnis, und der Lead blieb dauerhaft liegen. Dazu stand am gesperrten Knopf „erst anreichern\" — bei einem Lead, der längst angereichert war. Wer das las, suchte einen Anreicherungsknopf, den es nicht mehr zu drücken gab.\n\nJetzt nennt der Hinweis den wahren Grund und beide Wege hinaus:\n\n• Die Firma stimmt doch — Tochtergesellschaft, Handelsname, frisch umfirmiert. Mit „Firma bestätigen\" zählen die Funde wieder mit und Outreach ist möglich. Die Entscheidung steht mit Datum am Lead und lässt sich zurücknehmen.\n• Die Website ist falsch — dann gehört sie berichtigt: in den Firmendaten über „Bearbeiten\", danach erneut anreichern. Bei sehr unterschiedlichen Namen weist der Hinweis darauf hin, dass das der wahrscheinlichere Fall ist.\n\nDer Befund selbst bleibt sichtbar. Er wird nicht überschrieben, sondern beurteilt — und die Bestätigung gilt nur für den Lauf, den Sie geprüft haben. Reichern Sie erneut an, ist der neue Fund neu zu beurteilen.\n\nDIE KURZÜBERSICHT ZEIGT DEN RICHTIGEN ANSPRECHPARTNER\n\nOben am Lead stand ein beliebiger Name aus der Beschaffung statt der Person, die Sie als Ansprechpartner gewählt haben. Bei einem Lead mit dreizehn Kontakten fiel das auf.\n\nHeikel war die Folge: Der E-Mail-Entwurf geht an den GEWÄHLTEN Ansprechpartner. Wer oben die eine Adresse las und dann absendete, schrieb an eine andere Person. Name, E-Mail und Telefon kommen jetzt aus dem gewählten Ansprechpartner.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Zwei Neuerungen — und eine Angabe, die bisher wirkungslos war.\n\nUSPs GEZIELT NACH BRANCHE EINSETZEN\n\nIm Unternehmensprofil lässt sich jetzt je USP anhaken, für welche Zielbranchen er gilt. In eine E-Mail gehen dann nur noch die Merkmale, die zur Branche des Empfängers passen.\n\nBisher gingen ALLE unternehmensweiten USPs in jede Mail an jeden Lead. Bei einem gepflegten Profil sind das schnell vierzig Einträge — die KI bekam einen Haufen und musste raten, was zum Empfänger passt. Jetzt bekommt sie die passenden Argumente statt aller.\n\nWer nichts anhakt, ändert nichts: Ein USP ohne Branchenauswahl gilt weiter für alle Leads. Und ein Lead ohne erkannte Branche bekommt weiterhin sämtliche Merkmale — ohne Branche lässt sich nicht beurteilen, was passt.\n\nDie USPs, die an einem PRODUKT hängen, waren schon vorher branchenbezogen: Sie gehen mit ihrem Produkt mit, und passende Produkte sind im KI-Kontext als „besonders relevant\" markiert. Ein Hinweis dazu: Wer bei jedem Produkt alle Branchen anhakt, hebt diese Markierung auf — sie unterscheidet dann nichts mehr.\n\nMEHRERE LEADS AUF EINMAL AN SALESFORCE ÜBERGEBEN\n\nIn der Leadliste und in der Beschaffungsliste erscheint bei angehakten Leads neben „Zuweisen\" jetzt „An Salesforce übergeben\".\n\nJeder Lead durchläuft dabei genau dieselben Prüfungen wie bei der Einzelübergabe: Dublettenabgleich mit Salesforce, Schutz gegen doppelte Anlage, Pflichtfeldprüfung. Übertragen wird nacheinander, nicht gleichzeitig — sonst könnten zwei Übergaben derselben Firma einander nicht sehen.\n\nDer Vorgang zeigt seinen Fortschritt, lässt sich anhalten und listet am Ende jeden Lead einzeln auf: was übertragen wurde, was schon vorlag, wo eine Pflichtangabe fehlt. Eine Gesamtzahl allein würde verschweigen, was liegen geblieben ist.\n\nDie Schaltfläche erscheint nur, wenn Ihre Administration die CRM-Übergabe freigeschaltet hat.\n\nDIE ZIELBRANCHEN DES IDEALKUNDENPROFILS WIRKEN JETZT\n\nSie ließen sich im Unternehmensprofil anhaken, wurden gespeichert — und von keiner Textgenerierung gelesen. Wer sie pflegte, änderte damit nichts. Ab sofort gehen sie in Briefing, E-Mail und Brief ein und sagen der KI, ob ein Lead überhaupt zum Wunschkunden zählt.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.17.0",
+      "publishedAt": "2026-08-12",
+      "label": "Abweichende Firma bestätigen, richtiger Ansprechpartner in der Kurzübersicht"
+    },
     {
       "version": "0.16.0",
       "publishedAt": "2026-08-12",
@@ -17,11 +22,6 @@
       "version": "0.14.0",
       "publishedAt": "2026-08-11",
       "label": "Geerbte Abschnitte übernehmen oder abschalten"
-    },
-    {
-      "version": "0.13.0",
-      "publishedAt": "2026-08-11",
-      "label": "Unternehmensprofil je Abteilung"
     }
   ]
 }
