@@ -1,8 +1,13 @@
 {
-  "version": "0.15.0",
-  "publishedAt": "2026-08-11",
-  "notes": "Das Unternehmensprofil ist übersichtlicher geworden — und zeigt an jedem Abschnitt eindeutig, was gilt.\n\nEIN ZUSTAND JE ABSCHNITT\n\nBisher lagen in einer Abteilungsansicht drei Darstellungen desselben Abschnitts übereinander: die geerbten Einträge, darunter „Noch keine Produkte\", darunter derselbe KI-Vorschlag noch einmal. Was nun gilt, war daraus nicht zu erkennen.\n\nJeder Abschnitt hat jetzt sichtbar genau einen Zustand:\n\n• geerbt — ein gelber Kasten mit den Einträgen des allgemeinen Profils. Sie gelten und bleiben automatisch aktuell. Zwei Knöpfe daneben: „Eigene Fassung anlegen\" und „Nicht verwenden\".\n• eigene Fassung — die gewohnte Liste zum Bearbeiten, dazu der Hinweis, was aus dem allgemeinen Profil hier noch fehlt.\n• nicht verwendet — eine graue Zeile mit „Doch wieder erben\".\n\nDie Zahl neben einem Abschnitt zählt jetzt, was dort gilt. An einem geerbten Abschnitt stand vorher nichts, während der Kasten darunter sieben Einträge meldete.\n\nBEHOBEN: EIN NEUER EINTRAG KONNTE GEERBTE VERDRÄNGEN\n\nEin Abschnitt galt als eigener, sobald er irgendetwas enthielt. In einem geerbten Abschnitt mit sieben Einträgen genügte deshalb ein einziges hinzugefügtes Produkt, und die anderen sieben waren aus dem wirksamen Profil verschwunden — ohne Hinweis, denn im Formular hatten sie nie gestanden.\n\nJetzt nimmt jede Änderung an einem geerbten Abschnitt das Geerbte mit ins Formular. Sie arbeiten an genau der Liste weiter, die Sie vorher gesehen haben. Und mit „Wieder erben\" kommen Sie zurück, ohne jede Zeile einzeln löschen zu müssen.\n\nVORSCHLÄGE VERGLEICHEN GEGEN DAS, WAS GILT\n\nEin KI-Vorschlag aus Website oder Dokument wurde in einer Abteilungsansicht vollständig angezeigt, obwohl jeder Eintrag daraus bereits geerbt war — verglichen wurde nur mit dem Formular, und das war leer. Jetzt zählt, was tatsächlich gilt.\n\nWENIGER AUF EINMAL\n\nDie Abschnitte beginnen zugeklappt. Die Seite ist damit zunächst eine Übersicht mit Anzahl und Herkunft; Sie klappen auf, was Sie ändern wollen. Website- und Dokument-Auswertung liegen zusammen in einem zugeklappten Bereich, dessen Kopfzeile meldet, ob gerade etwas läuft und wie viele Vorschläge offen sind.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "version": "0.16.0",
+  "publishedAt": "2026-08-12",
+  "notes": "Drei Dinge, die nicht taten, was sie sollten.\n\nABSENDEN ÜBERGIBT DEN LEAD JETZT AN SALESFORCE\n\n„Absenden\" im Outreach öffnete Ihr Mailprogramm und setzte den Lead auf „Kontaktiert\" — mehr nicht. Die Übergabe an Salesforce lag hinter einem getrennten Knopf in der Call-Vorbereitung, und wer ihn nicht kannte, hinterließ angeschriebene Leads, von denen das CRM nichts wusste.\n\nJetzt gehört sie zum Absenden dazu: Der Lead geht hinüber, und die Mail wird dort als Aktivität am Datensatz festgehalten — wer später in Salesforce nachsieht, findet den Text der Ansprache. Was dabei gelungen ist, steht unter dem Entwurf.\n\nIhr Mailentwurf öffnet sich in JEDEM Fall. Klappt eine der Übergaben nicht (die Firma liegt drüben schon, ein Pflichtfeld fehlt, Salesforce antwortet nicht), erscheint der Grund im Portal — die Ansprache wird nie aufgehalten. Nachholen können Sie die Übergabe jederzeit über den bekannten Knopf.\n\nIst die CRM-Übergabe für Ihre Installation nicht freigeschaltet, ändert sich nichts.\n\nHINWEIS FÜR IHRE SALESFORCE-ADMINISTRATION: Für die Aktivität braucht der Integrationsbenutzer erstmals ein Recht am Objekt „Aufgabe\". Fehlt es, geht der Lead trotzdem hinüber und nur das Protokoll fehlt; die Meldung von Salesforce steht dann im Portal.\n\nFIRMENDATEN LASSEN SICH VOLLSTÄNDIG BERICHTIGEN\n\n„Bearbeiten\" bot acht Felder an, der Kasten „Firmendaten\" darunter zeigt bis zu dreißig. Wer dort einen Fehler sah — eine falsche Website, eine veraltete Rechtsform, eine Registernummer mit Zahlendreher —, kam nicht heran.\n\nDer Knopf sitzt jetzt am Kasten „Firmendaten\", also dort, wo die Daten stehen, und das Formular deckt alles ab. Fehlt eine Angabe ganz, ergänzen Sie sie über „Feld hinzufügen\". Eine Korrektur von Hand überlebt die nächste Anreicherung — sie wird nicht mehr überschrieben.\n\nDAS UNTERNEHMENSPROFIL LÄSST SICH WIEDER SPEICHERN\n\n„Speichern fehlgeschlagen (evtl. ungültige Website-URL oder Branchen-Key)\" — der Satz war geraten und zeigte auf zwei Dinge, die in Ordnung waren. Dahinter lag eine Sackgasse: Vorschläge aus einem hochgeladenen Dokument durften länger sein, als ein Feld aufnehmen kann. Sie ließen sich übernehmen und danach nicht speichern.\n\nVorschläge werden jetzt auf die zulässige Länge gekürzt, das Formular begrenzt die Felder, und falls doch etwas zu lang ist, steht in der Meldung, welcher Eintrag es ist und wie lang er sein darf.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.15.0",
+      "publishedAt": "2026-08-11",
+      "label": "Unternehmensprofil aufgeräumt — ein Zustand je Abschnitt"
+    },
     {
       "version": "0.14.0",
       "publishedAt": "2026-08-11",
@@ -17,11 +22,6 @@
       "version": "0.12.0",
       "publishedAt": "2026-08-10",
       "label": "Website in der Kurzübersicht, Vorschlag aus der E-Mail-Adresse"
-    },
-    {
-      "version": "0.11.1",
-      "publishedAt": "2026-08-10",
-      "label": "Beschaffung getrennt, Branchen genauer, Einstellungen geordnet"
     }
   ]
 }
