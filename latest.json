@@ -1,8 +1,13 @@
 {
-  "version": "0.16.0",
+  "version": "0.17.0",
   "publishedAt": "2026-08-12",
-  "notes": "Drei Dinge, die nicht taten, was sie sollten.\n\nABSENDEN ÜBERGIBT DEN LEAD JETZT AN SALESFORCE\n\n„Absenden\" im Outreach öffnete Ihr Mailprogramm und setzte den Lead auf „Kontaktiert\" — mehr nicht. Die Übergabe an Salesforce lag hinter einem getrennten Knopf in der Call-Vorbereitung, und wer ihn nicht kannte, hinterließ angeschriebene Leads, von denen das CRM nichts wusste.\n\nJetzt gehört sie zum Absenden dazu: Der Lead geht hinüber, und die Mail wird dort als Aktivität am Datensatz festgehalten — wer später in Salesforce nachsieht, findet den Text der Ansprache. Was dabei gelungen ist, steht unter dem Entwurf.\n\nIhr Mailentwurf öffnet sich in JEDEM Fall. Klappt eine der Übergaben nicht (die Firma liegt drüben schon, ein Pflichtfeld fehlt, Salesforce antwortet nicht), erscheint der Grund im Portal — die Ansprache wird nie aufgehalten. Nachholen können Sie die Übergabe jederzeit über den bekannten Knopf.\n\nIst die CRM-Übergabe für Ihre Installation nicht freigeschaltet, ändert sich nichts.\n\nHINWEIS FÜR IHRE SALESFORCE-ADMINISTRATION: Für die Aktivität braucht der Integrationsbenutzer erstmals ein Recht am Objekt „Aufgabe\". Fehlt es, geht der Lead trotzdem hinüber und nur das Protokoll fehlt; die Meldung von Salesforce steht dann im Portal.\n\nFIRMENDATEN LASSEN SICH VOLLSTÄNDIG BERICHTIGEN\n\n„Bearbeiten\" bot acht Felder an, der Kasten „Firmendaten\" darunter zeigt bis zu dreißig. Wer dort einen Fehler sah — eine falsche Website, eine veraltete Rechtsform, eine Registernummer mit Zahlendreher —, kam nicht heran.\n\nDer Knopf sitzt jetzt am Kasten „Firmendaten\", also dort, wo die Daten stehen, und das Formular deckt alles ab. Fehlt eine Angabe ganz, ergänzen Sie sie über „Feld hinzufügen\". Eine Korrektur von Hand überlebt die nächste Anreicherung — sie wird nicht mehr überschrieben.\n\nDAS UNTERNEHMENSPROFIL LÄSST SICH WIEDER SPEICHERN\n\n„Speichern fehlgeschlagen (evtl. ungültige Website-URL oder Branchen-Key)\" — der Satz war geraten und zeigte auf zwei Dinge, die in Ordnung waren. Dahinter lag eine Sackgasse: Vorschläge aus einem hochgeladenen Dokument durften länger sein, als ein Feld aufnehmen kann. Sie ließen sich übernehmen und danach nicht speichern.\n\nVorschläge werden jetzt auf die zulässige Länge gekürzt, das Formular begrenzt die Felder, und falls doch etwas zu lang ist, steht in der Meldung, welcher Eintrag es ist und wie lang er sein darf.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Zwei Stellen, an denen die Arbeit an einem Lead stehen blieb.\n\n„FIRMA ABWEICHEND\" IST KEINE EINBAHNSTRASSE MEHR\n\nFindet die Anreicherung auf der hinterlegten Website eine ANDERE Firma, werden die Funde zurückgehalten und Outreach gesperrt — richtig, denn sonst handelt Ihr Anschreiben von einem fremden Unternehmen.\n\nNur gab es bisher keinen Weg zurück. Erneut anreichern führt zum selben Ergebnis, und der Lead blieb dauerhaft liegen. Dazu stand am gesperrten Knopf „erst anreichern\" — bei einem Lead, der längst angereichert war. Wer das las, suchte einen Anreicherungsknopf, den es nicht mehr zu drücken gab.\n\nJetzt nennt der Hinweis den wahren Grund und beide Wege hinaus:\n\n• Die Firma stimmt doch — Tochtergesellschaft, Handelsname, frisch umfirmiert. Mit „Firma bestätigen\" zählen die Funde wieder mit und Outreach ist möglich. Die Entscheidung steht mit Datum am Lead und lässt sich zurücknehmen.\n• Die Website ist falsch — dann gehört sie berichtigt: in den Firmendaten über „Bearbeiten\", danach erneut anreichern. Bei sehr unterschiedlichen Namen weist der Hinweis darauf hin, dass das der wahrscheinlichere Fall ist.\n\nDer Befund selbst bleibt sichtbar. Er wird nicht überschrieben, sondern beurteilt — und die Bestätigung gilt nur für den Lauf, den Sie geprüft haben. Reichern Sie erneut an, ist der neue Fund neu zu beurteilen.\n\nDIE KURZÜBERSICHT ZEIGT DEN RICHTIGEN ANSPRECHPARTNER\n\nOben am Lead stand ein beliebiger Name aus der Beschaffung statt der Person, die Sie als Ansprechpartner gewählt haben. Bei einem Lead mit dreizehn Kontakten fiel das auf.\n\nHeikel war die Folge: Der E-Mail-Entwurf geht an den GEWÄHLTEN Ansprechpartner. Wer oben die eine Adresse las und dann absendete, schrieb an eine andere Person. Name, E-Mail und Telefon kommen jetzt aus dem gewählten Ansprechpartner.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.16.0",
+      "publishedAt": "2026-08-12",
+      "label": "Absenden übergibt an Salesforce, Firmendaten vollständig bearbeitbar"
+    },
     {
       "version": "0.15.0",
       "publishedAt": "2026-08-11",
@@ -17,11 +22,6 @@
       "version": "0.13.0",
       "publishedAt": "2026-08-11",
       "label": "Unternehmensprofil je Abteilung"
-    },
-    {
-      "version": "0.12.0",
-      "publishedAt": "2026-08-10",
-      "label": "Website in der Kurzübersicht, Vorschlag aus der E-Mail-Adresse"
     }
   ]
 }
