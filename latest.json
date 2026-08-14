@@ -1,8 +1,13 @@
 {
-  "version": "0.21.2",
+  "version": "0.21.3",
   "publishedAt": "2026-08-14",
-  "notes": "Drei Fehlerbehebungen im Massenversand. Alle betreffen den Weg „anreichern und Entwurf erstellen\" für mehrere Leads auf einmal.\n\nDIE LISTE AKTUALISIERT SICH WIEDER VON SELBST\n\nWer den Sammelvorgang startete und in der Ansicht blieb, sah minutenlang nur Ladezeichen — die fertigen Entwürfe erschienen erst nach einem Neuladen der Seite. Die Ansicht prüfte zwar regelmäßig nach, hörte damit aber schon drei Sekunden nach dem Start wieder auf: Sie wartete auf einen Entwurf, während noch die Anreicherung lief, und schloss aus dem fehlenden Entwurf, es sei nichts mehr zu tun. Jetzt läuft die Aktualisierung, solange tatsächlich gearbeitet wird — auch dann, wenn der Vorgang in einer anderen Ansicht angestoßen wurde.\n\nEIN LEAD, DER NICHT WEITERKOMMT, SAGT JETZT WARUM\n\nFand die Anreicherung auf der hinterlegten Website nichts Verwertbares, meldete das Portal „Lead muss erst angereichert werden\" — obwohl er angereichert war. Diese Meldung schickte in die falsche Richtung: Ein weiterer Lauf auf derselben Adresse findet wieder nichts und kostet erneut. Jetzt steht der tatsächliche Grund da, dazu ein Verweis auf die Firmendaten des Leads, wo sich die Website berichtigen lässt. Ein Knopf, der nicht funktionieren kann, wird nicht mehr angeboten, und das Ladezeichen eines solchen Leads dreht sich nicht mehr endlos.\n\nBEIM WIEDEREINTRITT KOMMT DIREKT DIE ARBEIT\n\nVerließ man den Massenversand und kam zurück, erschien wieder die Startkarte mit der Frage, ob Entwürfe erzeugt werden sollen — auch dann, wenn längst gearbeitet wurde und Texte fertig waren. Sie erscheint jetzt nur noch, wenn es wirklich etwas zu entscheiden gibt.\n\nIhre Daten und Einstellungen bleiben unverändert.",
+  "notes": "Der Massenversand sagt jetzt, wann er fertig ist.\n\nBisher endete er im Nichts: Die letzte Mail ging hinaus, und es stand dieselbe Ansicht da wie vorher — nur ohne offene Einträge. Wer durch war, musste die Ansicht selbst schließen und konnte nie sicher sein, ob wirklich alles erledigt ist.\n\nJetzt erscheint oben eine Abschlusskarte: „Massenversand abgeschlossen\", darunter die Zahl der geöffneten Mails, und rechts ein Knopf „Fertig\", der die Ansicht schließt. Sie schließt sich bewusst NICHT von allein — ein Fenster, das von selbst verschwindet, nimmt Ihnen die Möglichkeit nachzulesen, was gerade passiert ist.\n\nÜBERSPRUNGENE FIRMEN WERDEN GENANNT\n\nDer Abschluss tritt ein, wenn alles getan ist, was möglich WAR — nicht erst, wenn jede einzelne Mail hinausging. An manche Empfänger kann nämlich nie eine gehen: eine Firma ohne Mailadresse, oder eine, deren Anreicherung nichts Verwertbares gefunden hat. Sonst bliebe die Ansicht bei ihnen für immer bei „fast fertig\" stehen.\n\nDamit die Zahlen aufgehen, steht in der Abschlusskarte jede übersprungene Firma mit ihrem Grund.\n\nIhre Daten und Einstellungen bleiben unverändert.",
   "rollbackVersions": [
+    {
+      "version": "0.21.2",
+      "publishedAt": "2026-08-14",
+      "label": "Massenversand: Takt, Absagegrund, Wiedereintritt"
+    },
     {
       "version": "0.21.1",
       "publishedAt": "2026-08-14",
@@ -17,11 +22,6 @@
       "version": "0.20.0",
       "publishedAt": "2026-08-14",
       "label": "Kosten, die stimmen; brauchbare Ansprechpartner"
-    },
-    {
-      "version": "0.18.0",
-      "publishedAt": "2026-08-12",
-      "label": "USPs nach Branche, Massenübergabe ans CRM"
     }
   ]
 }
