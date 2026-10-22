@@ -1,17 +1,17 @@
 {
-  "version": "1.7.1",
+  "version": "1.7.2",
   "publishedAt": "2026-10-22",
-  "notes": "Version 1.7.1 — Gesprächsleitfaden wieder in Phasen, die automatische Vorbereitung wählt Ansprechpartner mit eigener Mailadresse, Luftbild in der Standortkarte.\n\nIhre Daten und Einstellungen bleiben erhalten. Bitte nach dem Update offene Portal-Tabs einmal neu laden (F5).\n\n• Gesprächsleitfaden: Bei einigen Briefings stand der Leitfaden im Anruf als roher Text mit Klammern und Anführungszeichen. Er erscheint jetzt wieder als Ablauf in Phasen — auch bei schon vorhandenen Briefings, ohne sie neu zu erzeugen.\n• Die automatische Vorbereitung wählt den Ansprechpartner selbst nach: Hat die bisher gewählte Person keine eigene Mailadresse, eine passende andere aber schon (gleiche Ebene oder Entscheider, keine Fachkraft), wird diese zum Hauptkontakt. Briefing und erster Entwurf gehen dann an sie. Eine von Hand getroffene Wahl ändert die Automatik nie.\n• „Bezug prüfen\" steht an einem Ansprechpartner nur noch, wenn seine Mailadresse zu einer anderen Firma gehört (Agentur, Kunde) — bisher an jeder Person, die das Portal auf der Website der Firma fand. Der Bestand wird beim Update einmal nachgezogen; von Hand gesetzte Kennzeichen und bestätigte Kontakte bleiben.\n• Standortkarte im Lead: Umschalter „Karte | Satellit\" unter der Karte.\n• Arbeitsplatz, Phase Mail: Der untere Korb heißt jetzt „Keine persönliche Mailadresse verfügbar\".\n\nFÜR ADMINISTRATOREN\n\n• Neue Adresse für die Arbeitsplätze in der Firewall-Liste (firewall-ziele.txt im Installationspaket): server.arcgisonline.com für das Luftbild. Ohne Freigabe bleibt nur das Luftbild grau, die Straßenkarte nicht.\n• Zurück auf 1.7.0 geht ohne Befehl.",
+  "notes": "Version 1.7.2 — Profilbild für jeden Benutzer.\n\nIhre Daten und Einstellungen bleiben erhalten. Bitte nach dem Update offene Portal-Tabs einmal neu laden (F5).\n\n• Profilbild: Unter Einstellungen → Mein Konto → Profil kann jeder Benutzer ein Bild hinterlegen (PNG, JPEG oder WebP), etwa ein Foto oder das Firmenlogo. Es steht dann statt der Initialen im Kreis oben rechts und in der Benutzerverwaltung. Der Browser verkleinert es vor dem Hochladen; ohne Bild bleibt alles wie bisher.\n\nFÜR ADMINISTRATOREN\n\n• In der Benutzerverwaltung lässt sich das Profilbild eines Benutzers im Fenster „Benutzer bearbeiten“ setzen und entfernen. Es wirkt sofort.\n• Zurück auf 1.7.1 geht ohne Befehl; die Bilder bleiben gespeichert und erscheinen nach einem erneuten Update wieder.",
   "rollbackVersions": [
+    {
+      "version": "1.7.1",
+      "publishedAt": "2026-10-22",
+      "label": "Stand vor 1.7.2 — in einer Probe geprüft, ohne Befehl. Danach entfallen die Profilbilder in der Anzeige (es stehen wieder die Initialen da); gespeichert bleiben sie. Die Daten bleiben."
+    },
     {
       "version": "1.7.0",
       "publishedAt": "2026-10-22",
-      "label": "Stand vor 1.7.1 — in einer Probe geprüft, ohne Befehl. Danach entfallen: die Nachwahl des Ansprechpartners durch die automatische Vorbereitung, das Luftbild und die Phasen-Ansicht bei betroffenen Leitfäden (sie stehen wieder als roher Text da). „Bezug prüfen\" bleibt, wie 1.7.1 es nachgezogen hat; neue Anreicherungen setzen es wieder an jede Website-Person. Die Daten bleiben."
-    },
-    {
-      "version": "1.6.0",
-      "publishedAt": "2026-10-08",
-      "label": "Notausgang, zwei Stände zurück — nur nach Rücksprache mit verumind. VORHER, noch unter 1.7.1: einmal den Befehl aus rueckweg-1.6-einstellungen.sql ausführen und ihn wiederholen, bis seine Ausgabe keine laufenden Anreicherungen, Vorbereitungen oder Briefings mehr nennt — ohne ihn lässt sich unter 1.6.0 keine Leadgen-Einstellung mehr speichern. Er hält die automatische Vorbereitung an, macht aus Anruf-Schritten der Sequenzen Aufgaben von Hand und schaltet Sequenzen mit den neuen Feldern aus (in der Probe für 1.7.0 geprüft). Danach entfallen alle Neuerungen aus 1.7.0 und 1.7.1. Die Daten bleiben."
+      "label": "Notausgang, zwei Stände zurück — nur nach Rücksprache mit verumind. Ohne Befehl (für 1.7.1 → 1.7.0 in einer Probe geprüft; 1.7.2 legt nur eine leere Spalte dazu, die 1.7.0 nicht liest). Danach entfallen zusätzlich die Neuerungen aus 1.7.1: die Nachwahl des Ansprechpartners durch die automatische Vorbereitung, das Luftbild und die Phasen-Ansicht bei betroffenen Leitfäden. Die Daten bleiben."
     }
   ]
 }
