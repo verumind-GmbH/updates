@@ -11,7 +11,7 @@
     {
       "version": "1.8.0",
       "publishedAt": "2026-10-29",
-      "label": "Notausgang, zwei Stände zurück — nur nach Rücksprache mit verumind. VORHER, noch unter 2.0.0, den Befehl aus rueckweg-1.8-einstellungen.sql ausführen — ohne ihn lässt sich unter 1.8.0 keine Leadgen-Einstellung mehr speichern; dazu wie für 1.9.0 ein gültiger Apify-Zugang mit Guthaben. Dieser Weg ist nicht in einer Probe gelaufen. Zusätzlich zu allem, was beim Rückweg auf 1.9.0 entfällt, entfallen die Neuerungen aus 1.9.0: die Leiste oben, der Halt je Absender-Domain, die Begrenzung der Versuche, der Abgleich „im CRM weiterbearbeitet“ und das Übernehmen von Sequenz-Änderungen für laufende Kontakte. Nach einem erneuten Update holt der Befehl „Zurückholen“ aus derselben Datei Einstellungen und Sequenzen zurück. Die Daten bleiben."
+      "label": "Notausgang, zwei Stände zurück — nur nach Rücksprache mit verumind. VORHER, noch unter 2.0.0, den Befehl aus rueckweg-1.8-einstellungen.sql ausführen — ohne ihn lässt sich unter 1.8.0 keine Leadgen-Einstellung mehr speichern; dazu wie für 1.9.0 ein gültiger Apify-Zugang mit Guthaben. In einer Probe geprüft (2.0.0 → 1.8.0 → 2.0.0, mit dem Befehl vorher und „Zurückholen“ danach). Zusätzlich zu allem, was beim Rückweg auf 1.9.0 entfällt, entfallen die Neuerungen aus 1.9.0: die Leiste oben, der Halt je Absender-Domain, die Begrenzung der Versuche, der Abgleich „im CRM weiterbearbeitet“ und das Übernehmen von Sequenz-Änderungen für laufende Kontakte. Nach einem erneuten Update holt der Befehl „Zurückholen“ aus derselben Datei Einstellungen und Sequenzen zurück. Die Daten bleiben."
     }
   ]
 }
