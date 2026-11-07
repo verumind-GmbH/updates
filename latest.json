@@ -12,6 +12,11 @@
       "version": "1.9.0",
       "publishedAt": "2026-10-30",
       "label": "Notausgang, zwei Stände zurück — nur nach Rücksprache mit verumind. Ein Befehl vorher ist nicht nötig, aber ein gültiger Apify-Zugang mit Guthaben: 1.9.0 nutzt Apify wieder für Websuche, schwer lesbare Websites, Impressum, Profil-Vorbefüllung und Kartendienst, und ohne Guthaben hält dort die automatische Vorbereitung an. Danach entfallen die AWS-Websuche und das Cockpit; der Zugang zur Websuche, ihre Freigaben und die Daten des Cockpits bleiben gespeichert und gelten nach einem erneuten Update wieder. Aus 2.0.0 in einer Probe geprüft; 2.0.1 hat dasselbe Schema. Die Daten bleiben."
+    },
+    {
+      "version": "1.8.0",
+      "publishedAt": "2026-10-29",
+      "label": "Notausgang, drei Stände zurück, nur nach Rücksprache mit verumind. VORHER, noch unter 2.0.1, den Befehl aus rueckweg-1.8-einstellungen.sql ausführen. Ohne ihn lässt sich unter 1.8.0 keine Leadgen-Einstellung mehr speichern. Dazu wie für 1.9.0 ein gültiger Apify-Zugang mit Guthaben. Aus 2.0.0 in einer Probe geprüft (2.0.0 → 1.8.0 → 2.0.0, mit dem Befehl vorher und „Zurückholen“ danach); 2.0.1 hat dasselbe Schema. Zusätzlich zu allem, was beim Rückweg auf 1.9.0 entfällt, entfallen die Neuerungen aus 1.9.0: die Leiste oben, der Halt je Absender-Domain, die Begrenzung der Versuche, der Abgleich „im CRM weiterbearbeitet“ und das Übernehmen von Sequenz-Änderungen für laufende Kontakte. Nach einem erneuten Update holt der Befehl „Zurückholen“ aus derselben Datei Einstellungen und Sequenzen zurück. Die Daten bleiben."
     }
   ]
 }
